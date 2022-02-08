@@ -1,0 +1,17 @@
+html {
+    font-family: Adobe Caslon Pro, Serif;
+    color: rgb(0, 139, 220);
+    margin: 50px;
+    margin-top: 0px;
+    background-color: #F8EDD9;
+}
+
+.heading1 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.heading2 {
+    font-style: normal;
+    font-weight: 400;
+}

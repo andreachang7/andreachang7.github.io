@@ -1,0 +1,16 @@
+html {
+    font-family: sans-serif;
+}
+
+ul {
+    color: red;
+    font-family: monospace; 
+}
+
+.optional-ingredient {
+    font-family: serif;
+}
+
+p {
+    max-width: 20em;
+}
