@@ -1,0 +1,60 @@
+html {
+  font-family: Adobe Caslon Pro, Serif;
+  color: rgb(0, 139, 220);
+  margin: 50px;
+  margin-top: 0px;
+}
+
+.container {
+  display: flex;
+  gap: 70%;
+  font-size: 12px;
+  margin: 0;
+}
+
+.story {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  position: absolute;
+  line-height: 140px;
+  text-align: justify;
+  padding-right: 60px;
+}
+
+.image1 {
+  position: relative;
+  top: 850px;
+  width: 500px;
+  position: absolute;
+}
+
+.page2-btn {
+  border: none;
+  color: white;
+  background-color: rgb(0, 139, 220);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  display: inline-block;
+  border-radius: 16px;
+  position: relative;
+  top: 1100px;
+  left: 120px;
+}
+
+.warning {
+  position: absolute;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(0, 139, 220);
+  width: 600px;
+  text-align: justify;
+  left: 800px;
+}
+
+
+
+
