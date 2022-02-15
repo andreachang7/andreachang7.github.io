@@ -1,0 +1,58 @@
+html {
+    font-family: sans-serif;
+}
+
+header {
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p.title {
+    text-align: center;
+    font-size: 26vh;
+    text-transform: uppercase;
+    /* border: 1px solid salmon; */
+    margin: 0;
+    line-height: 0.9;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -0.07em; 
+    text-shadow: 8px 7px rgb(86, 194, 100);
+}
+
+div.info {
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    padding: 20px;
+    background-image: url("https://static.toiimg.com/thumb/36003819/5043085106_01715628d2_z.jpg?width=1200&height=900");
+    background-size: cover; 
+    height: 100%;
+}
+
+/* ul, li, h1 {
+    border: 1px dashed blue;
+} */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1 {
+    max-width: 50%;
+    margin-left: auto;
+    color: white;
+    text-indent: -2em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.letter-d {
+    font-family: serif;
+    color: pink;
+}
