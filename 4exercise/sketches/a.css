@@ -1,0 +1,39 @@
+body {
+    font-family: 'Crimson Pro', serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 36;
+    margin-bottom: 0;
+}
+
+.entries {
+    margin-bottom: 80px;
+}
+
+.heading {
+    margin-bottom: 60px;
+}
+
+.chapter {
+    letter-spacing: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+.page {
+    margin-top: 10px;
+}
+
+span {
+    display: block;
+}
