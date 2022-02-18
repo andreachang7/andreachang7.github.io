@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Type</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!--Point out for Google Fonts!-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="icon" href="assets/imgs/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="row-full title section">
+            <h1>Let&rsquo;s take a look at web typography!</h1>
+        </div>
+        <div class="section websafe">
+            <div class="description">
+                <h2>1. Websafe fonts</h2> Here are some examples of websafe fonts. These fonts will always work, and don&rsquo;t require anything fancy other than calling them out in the CSS. These fonts are often useful as
+                <div class="tooltip">fallbacks.
+                    <span class="tooltiptext">A <em>fallback</em> is a back up font in case your custom font doesn&rsquo;t work. Add it after your custom font in the CSS like this: <code>font-family: "Crimson Text", serif;</code></span>
+                </div>
+            </div>
+            <div class="row-full examples">
+                <div class="times">Times</div>
+                <div class="arial">Arial</div>
+                <div class="courier">Courier</div>
+                <div class="georgia">Georgia</div>
+                <div class="verdana">Verdana</div>
+                <div class="serif tooltip">Serif
+                    <span class="tooltiptext">This and sans-serif below are generic tags that display the user&rsquo;s default serif and sans serif fonts.</span>
+                </div>
+                <div class="sans-serif">Sans Serif</div>
+            </div>
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Link your font in the css, like this</li>
+                </ol>
+                <figure class="highlight">
+                    <pre>
+                  <code class="language-html" data-lang="html">font-family: "times";</code>
+                </pre>
+                </figure>
+            </div>
+        </div>
+        <div class="section">
+            <div class="description">
+                <h2>2. Google Fonts</h2> You can use the open source collection of fonts on <a href="https://fonts.google.com/" target="_blank">Google Fonts.</a>
+            </div>
+            <div class="row-full examples">
+                <div class="crimson">Here I&rsquo;m using Crimson Text.</div>
+            </div>
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>First find <a href="https://fonts.google.com/specimen/Crimson+Text?selection.family=Crimson+Text" target="_blank">a font.</a></li>
+                    <li>Next, click on &ldquo;select this font&rdquo; in the top right.</li>
+                    <li>
+                        Add the link href tag to the head of your document.
+                        <figure class="highlight">
+                            <pre>
+                      <code>&lt;link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"&gt;</code>
+                    </pre>
+                        </figure>
+                    </li>
+                    <li>
+                        Call out your font in the css using the font family with the fallback provided.
+                        <figure class="highlight">
+                            <pre>
+                    <code>font-family: 'Crimson Text', serif;</code>
+                  </pre>
+                        </figure>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="section custom">
+            <div class="description">
+                <h2>3. Custom fonts &mdash; Purchase</h2>
+                <p>You can use any font you want online, you just need to get the right files. If you purchase the webfont directly from a foundry, the instructions and assets will be supplied to you.</p>
+            </div>
+            <div class="row-full examples">
+                <div class="burgess">Here I&rsquo;m using Burgess.</div>
+            </div>
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Purchase <a href="https://www.colophon-foundry.org/typefaces/burgess/" target="_blank">a font.</a></li>
+                    <li>Download the <a href="https://www.dropbox.com/sh/pfuwbw4t8g0yyp2/AACpKh2WcaOQnsF-8QMZoFnDa?dl=0" target="_blank">folder</a> which will contain the font in a variety of formats: eot, woff, woff2, and ttf</li>
+                    <li>Paste the type assets into your project&rsquo;s directory. For example: in this project, the fonts are saved in assets/fonts</li>
+                    <li>
+                        Copy and paste the @font-face asset from the "stylesheet.css" file into your CSS directory. Note, depending on your foundry, this might be called something else
+                        <figure class="highlight">
+                            <pre>
+                    <code> @font-face {    font-family: 'burgess-regular';
+    src: url('../fonts/burgess-regular.eot');
+    src: url('../fonts/burgess-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/burgess-regular.woff') format('woff'),
+         url('../fonts/burgess-regular.woff2') format('woff2'),
+         url('../fonts/burgess-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+                </code>
+                </pre>
+                        </figure>
+                    </li>
+                    <li>Change the source to point to your local directory and change it in all urls. For example, I had to move out of "css" and into fonts.
+                        <li>The font-family is what you&rsquo;ll use to name the font when you call it out in your css.</li>
+                        <li>
+                            Call out your font in your CSS.
+                            <figure class="highlight">
+                                <pre>
+                        <code>.burgess {
+  font-family: "burgess-regular", serif;
+}
+            </code>
+          </pre>
+                            </figure>
+                        </li>
+                        <li>Side note: all these different formats (eot, ttf, etc.) are fallbacks for a variety of browsers. The most modern way of working is using only woff and woff2. So, you can get away with just using those.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="section custom">
+            <div class="description">
+                <h2>3. Custom fonts &mdash; Convert Files</h2> You should always purchase your fonts, and you should definitely always make your clients purchase your fonts. Sometimes, however, you have a font and you want to test it out online and can&rsquo;t purchase it right away, or a web version doesn&rsquo;t exist yet. You can generate the files you need using an alternate type format. You also might try searching github and see if someone has an existing typeface online.</a>
+            </div>
+            <div class="row-full examples">
+                <div class="bigcaslon">Here I&rsquo;m using Big Caslon.</div>
+            </div>
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>First find your font.You need either a TTF or OTF file. If you don&rsquo;t have that, try converting the file on <a href="https://cloudconvert.com/" target="_blank">cloudconvert</a> first.</li>
+                    <li>With your TTF or OTF file, head on over to <a href="https://transfonter.org/" target="_blank">a webfont generator</a></li>
+                    <li>Convert your file and download the package.</li>
+                    <li>Like in the previous example, paste the font files into your project&rsquo;s local directory. On this example, I&rsquo;m saving it under assets/fonts.</li>
+                    <li>
+                        Open the stylesheet (stylesheet.css) provided. Cut and paste this into your main stylesheet.
+                        <br/>
+                        <figure class="highlight">
+                            <pre>
+                        <code>
+@font-face {
+    font-family: 'BigCaslon-Medium';
+    src: url('../fonts/BigCaslon-Medium.woff2') format('woff2'),
+        url('../fonts/BigCaslon-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+            </code>
+          </pre>
+                        </figure>
+                        <li>Like in the previous example, replace the source to be where our local directory is.</li>
+                        <li>
+                            Call out your font in the CSS as in the previous example
+                            <figure class="highlight">
+                                <pre>
+                        <code>
+.bigcaslon {<br/>
+  font-family: 'BigCaslon-Medium';
+}
+                        </code>
+                      </pre>
+                            </figure>
+                        </li>
+                </ol>
+            </div>
+        </div>
+        That&rsquo;s it! Now you&rsquo;re a pro.
+    </div>
+</body>
+
+</html>
