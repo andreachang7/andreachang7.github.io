@@ -1,3 +1,48 @@
 body {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Raleway', sans-serif;
+    padding: 50px;
 }
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 5vw;
+    margin-bottom: 0;
+    text-align: center;
+    display: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    row-gap: 20px;
+    /* border: 1px solid blue; */
+}
+
+.column-1, .column-2 {
+    width: 50%;
+    /* border: 1px solid blue; */
+}
+
+/* .entries {
+    grid-column: 1 / 2;
+    font-weight: 500;
+    font-style: medium;
+    border: 1px solid blue;
+} */
+
+/* .footer {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 600px 600px 600px;
+    gap: 5px;
+    width: 95vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    justify-content: space-around;
+}
+
+.bottom1 {
+    font-size: 16px;
+    margin-bottom: 0;
+} */

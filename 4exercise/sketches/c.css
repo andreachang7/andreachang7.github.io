@@ -1,3 +1,34 @@
 body {
-    font-family: 'Crimson Pro', serif;
+    font-family: monospace;
+    padding: 50px;
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #851721;
+        color: #F984BC;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.column-1 {
+    width: 50%;
+    font-weight: bold;
+    font-size: 2.3vw;
+    justify-content: center;
+    margin-top: 27%;
+    position: sticky;
+}
+
+.column-2 {
+    width: 50%;
+    font-size: 2vw;
+}
+
+.item2 {
+    font-size: 1vw;
+    margin-bottom: 20px;
 }

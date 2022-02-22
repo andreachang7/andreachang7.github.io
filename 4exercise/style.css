@@ -1,9 +1,9 @@
 html {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Baskerville', serif;
 }
 
 body {
-    color: navy;
+    color: black;
 }
 
 .wrapper {
@@ -26,7 +26,7 @@ body {
 
 h1 {
     font-weight: 500;
-    font-size: 10vw;
+    font-size: 5vw;
     text-align: center;
 }
 
