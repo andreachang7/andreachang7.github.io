@@ -1,5 +1,7 @@
 body {
     font-family: monospace;
+    background-color: #B79083;
+    color: #F9E1BA;
 }
 
 .wrapper {
@@ -12,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     font-size: 2vw;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .column-1 {
@@ -21,15 +23,31 @@ body {
 }
 
 .container-2 {
-    display: flex;
-    width: 60%;
-    border: 1px solid green;
+    display: block;
+    /* border: 1px solid green; */
     justify-content: center;
     font-size: 2vw;
+    text-align: right;
 }
 
 .container-3 {
-    display: flex;
-    border: 1px solid green;
+    width: 60%;
+    font-size: 2vw;
+    display: block;
+    /* border: 1px solid green; */
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.item2 {
+    font-size: 1vw;
+}
+
+.container-4 {
+    writing-mode: vertical-lr;
+    align-items: center;
+    font-size: 2vw;
+    text-align: right;
+    /* border: 1px solid green; */
 }
 
