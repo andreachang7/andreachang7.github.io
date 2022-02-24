@@ -24,6 +24,36 @@ body {
     line-height: 1.7;
 }
 
+.link1:hover {
+    background-color: #91E1EC;
+    border-radius: 10px;
+}
+
+.link2:hover {
+    background-color: #FAB6F6;
+    border-radius: 10px;
+}
+
+.link3:hover {
+    background-color: #FEB629;
+    border-radius: 10px;
+}
+
+.link4:hover {
+    background-color: #3ABB94;
+    border-radius: 10px;
+}
+
+.link5:hover {
+    background-color: #DA444A;
+    border-radius: 10px;
+}
+
+.link6:hover {
+    background-color: #886FBD;
+    border-radius: 10px;
+}
+
 h1 {
     font-weight: 500;
     font-size: 5vw;
