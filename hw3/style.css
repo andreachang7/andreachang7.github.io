@@ -78,17 +78,9 @@ html {
 }
 }
 
-@supports (-webkit-text-stroke: 1px) { 
-.heading-2 {
-      -webkit-text-stroke-width: 1px;
-      /* -webkit-text-fill-color: white; */
-      font-size: 200px;
-      text-transform: uppercase;
-      grid-row-start: 11;
-      grid-column-start: 6;
-      z-index: 1;
-    }
-    }
+.heading-1:hover {
+    font-style: italic;
+}
 
 .image6 {
     z-index: 0;
@@ -192,6 +184,10 @@ html {
     padding-left: 100px;
 }
 
+.paragraph-1:hover {
+    font-size: 30px;
+}
+
 .image7 {
     width: 500px;
     grid-column-start: 4;
@@ -267,6 +263,25 @@ html {
     grid-column-end: 8;
     width: 800px;
     padding-left: 10px;
+}
+
+.paragraph-2:hover {
+    font-size: 30px;
+}
+
+.image9 {
+    width: 500px;
+    grid-row-start: 26;
+    grid-column-start: 3;
+    padding-top: 50px;
+}
+
+.video-3 {
+    width: 300px;
+    grid-row-start: 27;
+    grid-column-start: 5;
+    padding-left: 60px;
+    padding-top: 70px;
 }
 
 
