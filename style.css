@@ -41,6 +41,7 @@ a:hover {
     background-color:rgb(0, 139, 220);
     color: #F8EDD9;
     border-radius: 15px;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🤔</text></svg>") 16 0,auto; !emojicursor.app
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🤔</text></svg>") 16 0,auto; 
+    /* !emojicursor.app */
 }
 
