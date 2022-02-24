@@ -1,3 +1,51 @@
 body {
-    font-family: 'Crimson Pro', serif;
+    font-family: monospace;
+    background-color: #FCF7DD;
+    color: #7B3EA1;
 }
+
+.container {
+    display: block;
+    font-size: 3vw;
+    font-style: italic;
+    /* border: 1px solid green; */
+}
+
+.row-1 {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.row-2 {
+    text-align: right;
+    /* border: 1px solid green; */
+    padding-right: 200px;
+}
+
+.column-container {
+    display: flex;
+    font-size: 1vw;
+    /* border: 1px solid green; */
+    padding-top: 200px;
+    padding-left: 300px;
+    line-height: 20px;
+}
+
+.item2 {
+    font-size: 0.8vw;
+    font-style: italic;
+}
+
+.column-1 {
+    padding-right: 50px;
+}
+
+.column-2 {
+    padding-right: 50px;
+}
+
+.column-3 {
+    padding-right: 50px;
+}
+
+

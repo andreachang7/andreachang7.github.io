@@ -1,3 +1,35 @@
 body {
-    font-family: 'Crimson Pro', serif;
+    font-family: monospace;
 }
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-1 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    border: 1px solid green;
+}
+
+.column-1 {
+    writing-mode: vertical-lr;
+    align-items: center;
+}
+
+.container-2 {
+    display: flex;
+    width: 60%;
+    border: 1px solid green;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.container-3 {
+    display: flex;
+    border: 1px solid green;
+}
+

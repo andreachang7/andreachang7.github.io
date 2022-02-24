@@ -3,7 +3,6 @@ body {
     padding: 50px;
     background-color: #4E68C0;
     color: white;
-    font-weight: 200;
 }
 
 @media (max-width: 650px) {
@@ -36,7 +35,7 @@ body {
     align-items: center;
     text-align: center;
     font-size: 2vw;
-    font-family: 'Raleway', sans-serif;
+    font-family: monospace;
     padding: 0;
 }
 
