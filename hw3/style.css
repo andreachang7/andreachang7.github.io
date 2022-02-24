@@ -16,7 +16,7 @@ html {
 .grid-container-1 {
     display: grid;
     grid-template-columns: repeat(10, 150px);
-    grid-template-rows: repeat(20, 100px);
+    grid-template-rows: repeat(30, 100px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     /* border: 1px solid blue; */
@@ -182,6 +182,92 @@ html {
     font-style: italic;
 }
 
+.paragraph-1 {
+    font-size: 20px;
+    text-align: justify;
+    grid-row-start: 14;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.image7 {
+    width: 500px;
+    grid-column-start: 4;
+    grid-row-start: 16;
+}
+
+.video-2 {
+    width: 500px;
+    grid-column-start: 2;
+    grid-row-start: 17;
+    padding-top: 45px;
+}
+
+.subtitle-6 {
+    font-size: 18px;
+    grid-row-start: 17;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.subtitle-6:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-7 {
+    font-size: 18px;
+    grid-row-start: 22;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding-top: 20px;
+    padding-left: 140px;
+}
+
+.subtitle-7:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.image8 {
+    width: 400px;
+    grid-row-start: 19;
+    grid-column-start: 8;
+}
+
+.subtitle-9 {
+    font-size: 18px;
+    grid-row-start: 18;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    padding-top: 75px;
+    padding-left: 130px;
+}
+
+.subtitle-9:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.paragraph-2 {
+    font-size: 20px;
+    text-align: justify;
+    grid-row-start: 23;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    width: 800px;
+    padding-left: 10px;
+}
 
 
 /* .image1 {
