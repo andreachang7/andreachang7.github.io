@@ -1,9 +1,9 @@
 html {
-    font-family: 'Baskerville', serif;
+    font-family: monospace;
 }
 
 body {
-    color: black;
+    color: #B3A5A7;
 }
 
 .wrapper {
@@ -31,7 +31,7 @@ h1 {
 }
 
 a {
-    color: navy;
+    color: #B3A5A7;
     text-decoration: none;
     border-bottom: 1 px solid black;
 }
