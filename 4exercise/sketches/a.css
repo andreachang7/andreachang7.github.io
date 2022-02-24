@@ -1,5 +1,6 @@
 body {
-    font-family: 'Crimson Pro', serif;
+    font-family: monospace;
+    background-color: orange;
 }
 
 .wrapper {
