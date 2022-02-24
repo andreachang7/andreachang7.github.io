@@ -1,0 +1,216 @@
+html {
+    font-family: 'Noto Serif Display', serif;;
+    color: red;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>👉</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.75vw;
+    padding: 50px;
+    padding-top: 0;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(10, 150px);
+    grid-template-rows: repeat(20, 100px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* border: 1px solid blue; */
+}
+
+/* .image1 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 800px;
+} */
+
+.image2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 250px;
+}
+
+.image3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.collage-1 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    width: 400px;
+}
+
+.image4, .image5 {
+    position: absolute;
+    z-index: 0;
+    width: 400px;
+}
+
+.image5 {
+    z-index: 1;
+    width: 300px;
+    transform: translate(250px, 350px);
+}
+
+@supports (-webkit-text-stroke: 1px) { 
+.heading-1 {
+  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-fill-color: white; */
+  font-size: 200px;
+  text-transform: uppercase;
+  grid-row-start: 11;
+  grid-column-start: 2;
+  z-index: 1;
+  padding-top: 30px;
+}
+}
+
+@supports (-webkit-text-stroke: 1px) { 
+.heading-2 {
+      -webkit-text-stroke-width: 1px;
+      /* -webkit-text-fill-color: white; */
+      font-size: 200px;
+      text-transform: uppercase;
+      grid-row-start: 11;
+      grid-column-start: 6;
+      z-index: 1;
+    }
+    }
+
+.image6 {
+    z-index: 0;
+    width: 500px;
+    grid-row-start: 11;
+    grid-column-start: 3;
+}
+
+.video-1 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 800px;
+}
+
+.subtitle-1 {
+    font-size: 18px;
+    grid-row-start: 7;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    padding-left: 100px;
+    padding-top: 90px;
+}
+
+.subtitle-1:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-2 {
+    font-size: 18px;
+    grid-row-start: 3;
+    grid-column-start: 5;
+    padding-top: 75px;
+}
+
+.subtitle-2:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-3 {
+    font-size: 18px;
+    grid-row-start: 10;
+    grid-column-start: 7;
+    padding-top: 75px;
+    padding-left: 45px;
+}
+
+.subtitle-3:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-4 {
+    font-size: 18px;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 15px;
+    padding-left: 70px;
+}
+
+.subtitle-4:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-5 {
+    font-size: 18px;
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 80px;
+    padding-left: 145px;
+}
+
+.subtitle-5:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+
+
+/* .image1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 500px;
+} */
+
+
+/* .collage {
+    width:500px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */
+
+/* .image1, .image2 {
+    position:absolute;
+    top:0;
+    z-index:0;
+} */
+
+/* .image2 {
+    z-index:1;
+    width: 350px;
+    /* transform: rotate(12deg); */
+    /* transform: translate(50px, 50px); */
+
+/* img {
+    width:100%;
+} */

@@ -1,0 +1,42 @@
+body {
+    background-color: pink;
+    font-family: arial;
+    color: red;
+    font-size: 100px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .item {
+    text-align: center;
+    animation-name: spinType;
+    animation-duration: 5s;
+    /* animation: spinType 5s ease-out 2; */
+  }
+
+
+@keyframes spinTyoe {
+    0% { 
+        transform: rotate(0);
+    }
+    100% { 
+        transform: rotate(90deg);
+    }
+    }
+
+
+@keyframes spinType {
+    0% {
+    }
+    60% {
+    }
+    100% {
+    }
+  }
+  
