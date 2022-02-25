@@ -16,7 +16,7 @@ html {
 .grid-container-1 {
     display: grid;
     grid-template-columns: repeat(10, 150px);
-    grid-template-rows: repeat(30, 100px);
+    grid-template-rows: repeat(45, 100px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     /* border: 1px solid blue; */
@@ -72,9 +72,10 @@ html {
   font-size: 200px;
   text-transform: uppercase;
   grid-row-start: 11;
-  grid-column-start: 2;
+  grid-column-start: 1;
   z-index: 1;
   padding-top: 30px;
+  padding-left: 50px;
 }
 }
 
@@ -270,20 +271,124 @@ html {
 }
 
 .image9 {
-    width: 500px;
+    width: 600px;
     grid-row-start: 26;
     grid-column-start: 3;
     padding-top: 50px;
 }
 
 .video-3 {
-    width: 300px;
+    width: 400px;
     grid-row-start: 27;
     grid-column-start: 5;
     padding-left: 60px;
     padding-top: 70px;
 }
 
+.subtitle-10 {
+    font-size: 18px;
+    grid-row-start: 32;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    padding-left: 70px;
+}
+
+.subtitle-10:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.image10 {
+    width: 400px;
+    grid-row-start: 32;
+    grid-column-start: 8;
+}
+
+.heading-2 {
+    font-size: 180px;
+    grid-row-start: 34;
+    grid-column-start: 1;
+    padding-left: 70px;
+    z-index: 1;
+}
+
+.heading-2:hover {
+    font-style: italic;
+}
+
+.video-4 {
+    width: 400px;
+    grid-row-start: 33;
+    grid-column-start: 3;
+}
+
+.video-5 {
+    width: 300px;
+    grid-row-start: 36;
+    grid-column-start: 7;
+    z-index: 0;
+}
+
+.subtitle-11 {
+    font-size: 18px;
+    grid-row-start: 38;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding-left: 130px;
+}
+
+.subtitle-11:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-12 {
+    font-size: 18px;
+    grid-row-start: 38;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    padding-top: 90px;
+    padding-left: 115px;
+}
+
+.subtitle-12:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.subtitle-13 {
+    font-size: 18px;
+    grid-row-start: 37;
+    grid-column-start: 9;
+    grid-column-end: 10;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.subtitle-13:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    font-style: italic;
+}
+
+.paragraph-3 {
+    font-size: 20px;
+    text-align: justify;
+    grid-row-start: 40;
+    grid-column-start: 3;
+    grid-column-end: 9;
+}
+
+.paragraph-3:hover {
+    font-size: 30px;
+}
 
 /* .image1 {
     grid-column-start: 1;
