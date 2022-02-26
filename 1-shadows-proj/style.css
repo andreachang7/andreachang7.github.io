@@ -1,0 +1,62 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: adobe-caslon-pro, serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(10, 100px);
+    height: 90vh;
+}
+
+.heading-1 {
+    font-size: 14vw;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    line-height: 16vw;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.text-1 {
+    font-size: 2vw;
+    grid-column-start: 10;
+    grid-column-end: 11;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.text-2 {
+    font-size: 2vw;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+}
+
+.text-3 {
+    font-size: 2vw;
+    grid-column-start: 10;
+    grid-row-start: 6;   
+    padding-left: 50px;
+}
+
+.text-4 {
+    font-size: 2vw;
+    grid-column-start: 7;
+    grid-row-start: 9;
+}
+
+.button-1 {
+    color: white;
+    background: none;
+    border: none;
+    font-family: adobe-caslon-pro, serif;
+    font-size: 1.5vw;
+    grid-column-start: 10;
+    grid-row-start: 9;
+    padding-left: 300px;
+}
