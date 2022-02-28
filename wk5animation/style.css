@@ -1,33 +1,74 @@
 body {
-    background-color: pink;
+    background-color: white;
     font-family: arial;
-    color: red;
     font-size: 100px;
   }
   
-  .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  
-  .item {
-    text-align: center;
-    animation-name: spinType;
-    animation-duration: 5s;
-    /* animation: spinType 5s ease-out 2; */
+
+h1 {
+  font-family: monospace;
+  font-size: 20px;
+  color: green;
+}
+
+#scribbles {
+  width: 700px;
+  animation: scribbleSpin 7s ease-out infinite;
+}
+
+
+@keyframes scribbleType {
+  0% {
+    transform: rotate(0.5turn);
   }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes scribbleSpin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
 
-@keyframes spinTyoe {
-    0% { 
-        transform: rotate(0);
-    }
-    100% { 
-        transform: rotate(90deg);
-    }
-    }
+@keyframes colorSwap {
+  0% {
+    fill: default;
+  }
+  100% {
+    stroke: pink;
+  }
+}
 
-  
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#scribbles path, #scribbles circle {
+  animation: colorSwap 7s ease-in infinite alternate, fade 7s ease-in infinite alternate-reverse;
+}
+
+#scribbles:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
