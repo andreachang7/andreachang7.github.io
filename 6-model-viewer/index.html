@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Model Viewer</title>
+</head>
+<body>
+    <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500 disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+        <div class="interaction-prompt" slot="interaction-prompt">👽</div>
+        <button class="Hotspot" slot="hotspot-1" data-position="0.081323955021484m 1.3810331846298498m 0.32216083939291895m" data-normal="0m 0.34581316912614296m 0.9383033901989983m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">hello</div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="-0.49908599294190903m 0.9106148933052938m 0.1346378274638793m" data-normal="-0.6054131947497411m -0.03473060263529404m 0.795153223513243m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">how are you?</div>
+    </button>
+    </model-viewer>
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+model-viewer {
+    width: 80vh;
+    height: 80vh;
+}
+
+
+.interaction-prompt {
+    font-size: 150px;
+  }
+  
+
+button {
+    font-size: 30px;
+    background-color: pink;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+}
