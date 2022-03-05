@@ -1,0 +1,73 @@
+// cursor effect referenced from: https://codepen.io/roesinn/pen/ZEbbMbN
+
+
+(function () {
+
+    const link = document.querySelectorAll('wrapper > .hover');
+    const cursor = document.querySelector('.cursor');
+
+    const animateit = function (i) {
+          const span = this.querySelector('text-1');
+          const { offsetX: x, offsetY: y } = i,
+          { offsetWidth: width, offsetHeight: height } = this,
+
+          move = 25,
+          xMove = x / width * (move * 2) - move,
+          yMove = y / height * (move * 2) - move;
+
+          span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+          if (i.type === 'mouseleave') span.style.transform = '';
+    };
+
+    const editCursor = i => {
+          const { clientX: x, clientY: y } = i;
+          cursor.style.left = x + 'px';
+          cursor.style.top = y + 'px';
+    };
+
+    link.forEach(b => b.addEventListener('mousemove', animateit));
+    link.forEach(b => b.addEventListener('mouseleave', animateit));
+    window.addEventListener('mousemove', editCursor);
+
+})();
+
+
+
+// drag effect referenced from W3School
+
+// dragElement(document.getElementById("circle-1"));
+
+// function dragElement(elmnt) {
+//   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+//   if (document.getElementById(elmnt.id + "header")) {
+//     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//   } else {
+//     elmnt.onmousedown = dragMouseDown;
+//   }
+
+//   function dragMouseDown(e) {
+//     e = e || window.event;
+//     e.preventDefault();
+//     pos3 = e.clientX;
+//     pos4 = e.clientY;
+//     document.onmouseup = closeDragElement;
+//     document.onmousemove = elementDrag;
+//   }
+
+//   function elementDrag(e) {
+//     e = e || window.event;
+//     e.preventDefault();
+//     pos1 = pos3 - e.clientX;
+//     pos2 = pos4 - e.clientY;
+//     pos3 = e.clientX;
+//     pos4 = e.clientY;
+//     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+//     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+//   }
+
+//   function closeDragElement() {
+//     document.onmouseup = null;
+//     document.onmousemove = null;
+//   }
+// }

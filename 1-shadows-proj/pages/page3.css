@@ -1,0 +1,9 @@
+html {
+    background-color: white;
+    color: black;
+}
+
+model-viewer {
+    width: 80vw;
+    height: auto;
+  }

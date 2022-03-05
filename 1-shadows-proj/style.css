@@ -1,8 +1,14 @@
 html {
     background-color: white;
     color: black;
-    font-family: adobe-caslon-pro, serif;
+    /* font-family: adobe-caslon-pro, serif; */
     overflow: hidden;
+    margin:0;
+    cursor: url("arrow.png"), auto;
+}
+
+body {
+    margin:0;
 }
 
 .grid-container {
@@ -10,21 +16,81 @@ html {
     grid-template-columns: repeat(10, auto);
     grid-template-rows: repeat(10, 100px);
     height: 90vh;
+    width: 100vw;
+}
+
+.night {
+    background-color: black;
+    color: white;
+    height:100vh;
+}
+
+.white {
+    color:white !important;
+}
+
+.white-1 {
+    background-color: white !important;
+}
+
+.black {
+    color: black !important;
+}
+
+.buttonOn {
+    color:white;
+}
+
+.button {
+    color: black;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 2vw;
 }
 
 .heading-1 {
     font-size: 14vw;
     grid-column-start: 4;
     grid-column-end: 6;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 6;
     line-height: 16vw;
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
+.heading-1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading-1 a:hover {
+    filter: blur(4px);
+}
+
+/* .one {
+    display: none;
+}
+
+.character-1:hover .one {
+    display: none;
+}
+
+.character-1:hover .one {
+    display: inline;
+    font-size: 100px;
+    color: white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
 .text-1 {
-    font-size: 2vw;
+    font-size: 2.5vw;
     grid-column-start: 10;
     grid-column-end: 11;
     padding-left: 200px;
@@ -34,47 +100,34 @@ html {
 }
 
 .text-2 {
-    font-size: 2vw;
-    grid-column-start: 2;
-    grid-column-end: 5;
+    font-size: 2.5vw;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 2;
     z-index: 1;
+    padding-left: 100px;
     color: white;
     z-index: 1;
 }
 
 .text-3 {
-    font-size: 2vw;
-    grid-column-start: 10;
-    grid-row-start: 6;   
+    font-size: 2.5vw;
+    grid-column-start: 9;
+    grid-row-start: 4;   
     padding-left: 50px;
     color: white;
     z-index: 1;
+    padding-left: 200px;
 }
 
 .text-4 {
-    font-size: 2vw;
-    grid-column-start: 7;
-    grid-row-start: 9;
+    font-size: 2.5vw;
+    grid-column-start: 9;
+    grid-row-start: 8;
     color: white;
     z-index: 1;
     /* color: white; */
 }
-
-/* .circles {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-} */
-
-/* .circles-grid {
-    display: grid;
-    grid-template-columns: repeat(10, auto);
-    grid-template-rows: repeat(10, 100px); 
-    height: 90vh;
-} */
 
 .circle-1 {
     width: 300px;
@@ -84,10 +137,8 @@ html {
     position: absolute;
     top: -20%;
     z-index: 0;
-    animation: circleFall1 10s ease-out infinite;
+    animation: circleFall1 11s ease-out infinite;
     filter: blur(4px);
-    /* grid-column-start: 2;
-    grid-row-start: 1; */
 }
 
 @keyframes circleFall1 {
@@ -108,7 +159,7 @@ html {
     top: -20%;
     left: 50%;
     z-index: 0;
-    animation: circleFall2 10s ease-out infinite;
+    animation: circleFall2 13s ease-out infinite;
     filter: blur(4px);
 }
 
@@ -127,9 +178,9 @@ html {
     background-color: black; 
     position: absolute;
     top: -20%;
-    left: 70%;
+    left: 60%;
     z-index: 0;
-    animation: circleFall3 10s ease-out infinite;
+    animation: circleFall3 14s ease-out infinite;
     filter: blur(4px);
 }
 
@@ -163,15 +214,38 @@ html {
         transform: translateY(500%);
     }
 }
- 
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(10,10);
+        /* background-color:yellow; */
+    }
+    .text-1,.text-2,.text-3,.text-4 {
+        font-size:30px;
+        /* color:red; */
+    }
+    .heading-1 {
+        font-size: 100px;
+        line-height: 120px;
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+    .button-1 {
+        font-size: 30px;
+    }
+  }
+
 
 button {
-    color: black;
-    background: none;
     border: none;
-    font-family: adobe-caslon-pro, serif;
-    font-size: 1.5vw;
+    background-color: transparent;
+    font-size: 2vw;
+    z-index: 2;
     grid-column-start: 10;
     grid-row-start: 9;
-    padding-left: 300px;
+    padding-left: 250px;
+    z-index: 1;
+    font-family: adobe-caslon-pro, serif;
 }
