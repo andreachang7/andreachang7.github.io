@@ -30,6 +30,14 @@ html {
     color: white;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto;;
+}
+
 .title-container {
     display: flex;
     align-items: center;
@@ -52,7 +60,7 @@ html {
     filter: none !important;
     cursor: pointer;
     animation: glowAnimation 5s ease-in-out infinite;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto; 
 }
 
 @keyframes glowAnimation {
@@ -121,22 +129,42 @@ html {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>☂️</text></svg>") 16 0,auto;  
 }
 
+.text-2 {
+    display: inline-block;
+}
+
 .text-2:hover { 
     text-decoration: underline wavy;
     font-style: italic;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌻</text></svg>") 16 0,auto; 
+    animation: textGlow1 1s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow1 {
+    from {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #666666, 0 0 40px #666666, 0 0 50px #666666, 0 0 60px #666666, 0 0 70px #666666;
+    }
+    to {
+        text-shadow: 0 0 20px white, 0 0 30px #858585, 0 0 40px #858585, 0 0 50px #858585, 0 0 60px #858585, 0 0 70px #858585, 0 0 80px #858585;
+    }
 }
 
 .text-3:hover {
     text-decoration: underline wavy;
     font-style: italic;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>💨</text></svg>") 16 0,auto; 
+    animation: textGlow1 1s ease-in-out infinite alternate;
 }
 
 .text-4:hover {
     text-decoration: underline wavy;
     font-style: italic;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>👴</text></svg>") 16 0,auto; 
+    animation: textGlow1 1s ease-in-out infinite alternate;
+}
+
+.group-1:hover {
+    animation: textGlow1 2s ease-in-out infinite alternate;
 }
 
 .passage-1 {
@@ -942,8 +970,10 @@ html {
     color: black;
     padding-bottom: 5%;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌚</text></svg>") 16 0,auto; 
-    /* display: flex;
-    justify-content: right; */
+}
+
+.button-2 .passage-2 {
+    margin-left: 50%;
 }
 
 .passage-2 {
@@ -963,11 +993,24 @@ html {
     }
   }
   
-  span-2 {
+span-2 {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
   }
+
+.group-2:hover {
+    animation: textGlow2 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow2 {
+    from {
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px #666666, 0 0 40px #666666, 0 0 50px #666666, 0 0 60px #666666, 0 0 70px #666666;
+    }
+    to {
+        text-shadow: 0 0 20px black, 0 0 30px #858585, 0 0 40px #858585, 0 0 50px #858585, 0 0 60px #858585, 0 0 70px #858585, 0 0 80px #858585;
+    }
+}
   
   span-2:nth-child(1) {
     animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
@@ -1053,6 +1096,500 @@ html {
     animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
 
+  span-2:nth-child(22) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(23) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(24) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(25) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(26) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(27) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(28) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(29) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(30) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(31) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(32) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(33) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(34) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(34) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(35) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(36) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(37) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(38) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(39) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(40) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(41) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(42) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(43) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(44) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(45) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(46) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(47) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(48) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(49) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(50) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(51) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(52) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(53) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(54) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(55) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(56) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(57) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(58) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(59) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(60) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(61) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(62) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(63) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(64) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(65) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(66) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(67) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(68) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(69) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(70) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(71) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(72) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(73) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(74) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(75) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(76) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(77) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(78) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(79) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(80) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(81) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(82) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(83) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(84) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(85) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(86) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(87) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(88) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(89) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(90) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(91) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(92) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(93) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(94) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(95) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(96) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(97) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(98) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(99) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(100) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(101) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(102) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(103) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(104) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(105) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(106) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(107) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(108) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(109) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(110) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(111) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(112) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(113) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(114) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(115) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(116) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(117) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(118) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span-2:nth-child(119) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(120) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(121) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(122) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(123) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(124) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(125) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(126) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(127) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(128) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(129) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(130) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(131) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(132) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(133) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(134) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(135) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(136) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(137) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(138) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(139) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(140) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(141) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(142) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span-2:nth-child(143) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  
+
 #button-2 {
     width: 100px;
     height: 100px;
@@ -1071,7 +1608,31 @@ html {
     background-color: black;
     color: white;
     padding-bottom: 5%;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌟</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌟</text></svg>") 16 0,auto; 
+}
+
+.passage-3 {
+    font-family: big-caslon-pro, serif;
+    font-weight: 100;
+    margin-left: 10%;
+    max-width: 40ch;
+    text-align: justify;
+    transform: scale(0.94);
+    animation: scale2 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    padding-bottom: 5%;
+  }
+
+.group-3:hover {
+    animation: textGlow3 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow3 {
+    from {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #666666, 0 0 40px #666666, 0 0 50px #666666, 0 0 60px #666666, 0 0 70px #666666;
+    }
+    to {
+        text-shadow: 0 0 20px white, 0 0 30px #858585, 0 0 40px #858585, 0 0 50px #858585, 0 0 60px #858585, 0 0 70px #858585, 0 0 80px #858585;
+    }
 }
 
 #button-3 {

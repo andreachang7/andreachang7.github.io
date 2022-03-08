@@ -24,6 +24,10 @@ body {
     color: white;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .title-container {
     display: flex;
     align-items: center;

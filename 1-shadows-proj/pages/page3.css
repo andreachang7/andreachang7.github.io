@@ -1,9 +1,406 @@
 html {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
-model-viewer {
-    width: 80vw;
-    height: auto;
-  }
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.75vw;
+    padding: 50px;
+    padding-top: 0;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.menu:hover {
+    text-shadow: 2px 2px 10px black;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto;;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.title {
+    font-size: 300px;
+    text-align: center;  
+    filter: blur(4px);  
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    color: white;
+}
+
+.title:hover {
+    filter: none;
+}
+
+#passage-container {
+    font-family: big-caslon-pro, serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: justify;
+    font-size: 2vw;
+    margin: 10%;
+}
+
+.text-1-container {
+    display: flex;
+}
+
+.text-1 {
+    font-size: 3vw;
+    transform: skew(15deg, 15deg);
+    filter: blur(4px);
+}
+
+.text-1:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-2-container {
+    display: flex;
+}
+
+.text-2 {
+    font-size: 4vw;
+    transform: skew(-5deg, -10deg);
+    filter: blur(4px);
+    padding-left: 15%;
+}
+
+.text-2:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-3-container {
+    display: flex;
+}
+
+.text-3 {
+    font-size: 3vw;
+    transform: skew(20deg, 40deg);
+    filter: blur(4px);
+    padding-left: 40%;
+}
+
+.text-3:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-4-container {
+    display: flex;
+}
+
+.text-4 {
+    font-size: 3vw;
+    transform: skew(5deg, 20deg);
+    filter: blur(4px);
+    padding-left: 5%;
+}
+
+.text-4:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-5-container {
+    display: flex;
+}
+
+.text-5 {
+    font-size: 4vw;
+    transform: skew(-15deg, -20deg);
+    filter: blur(4px);
+    padding-left: 35%;
+}
+
+.text-5:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-6-container {
+    display: flex;
+}
+
+.text-6 {
+    font-size: 3vw;
+    transform: skew(5deg, 10deg);
+    filter: blur(4px);
+    padding-left: 5%;
+}
+
+.text-6:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-7-container {
+    display: flex;
+}
+
+.text-7 {
+    font-size: 2.5vw;
+    transform: skew(-25deg, -30deg);
+    filter: blur(4px);
+    padding-left: 50%;
+    padding-top: 10%;
+}
+
+.text-7:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-8-container {
+    display: flex;
+}
+
+.text-8 {
+    font-size: 2.5vw;
+    transform: skew(30deg, 25deg);
+    filter: blur(4px);
+    padding-left: 10%;
+    padding-top: 0;
+}
+
+.text-8:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-9-container {
+    display: flex;
+}
+
+.text-9 {
+    font-size: 5vw;
+    transform: skew(-30deg, -25deg);
+    filter: blur(4px);
+    padding-left: 65%;
+    padding-top: 10%;
+    text-align: left;
+}
+
+.text-9:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-10-container {
+    display: flex;
+}
+
+.text-10 {
+    font-size: 3vw;
+    transform: skew(-40deg, -15deg);
+    filter: blur(4px);
+    padding-left: 20%;
+    padding-top: 0;
+}
+
+.text-10:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-11-container {
+    display: flex;
+}
+
+.text-11 {
+    font-size: 3vw;
+    transform: skew(-40deg, -15deg);
+    filter: blur(4px);
+    padding-left: 10%;
+    padding-top: 0;
+}
+
+.text-11:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-12-container {
+    display: flex;
+}
+
+.text-12 {
+    font-size: 3vw;
+    transform: skew(15deg, 15deg);
+    filter: blur(4px);
+}
+
+.text-12:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-13-container {
+    display: flex;
+}
+
+.text-13 {
+    font-size: 4vw;
+    transform: skew(-5deg, -10deg);
+    filter: blur(4px);
+    padding-left: 15%;
+}
+
+.text-13:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-14-container {
+    display: flex;
+}
+
+.text-14 {
+    font-size: 3vw;
+    transform: skew(20deg, 40deg);
+    filter: blur(4px);
+    padding-left: 40%;
+}
+
+.text-14:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-15-container {
+    display: flex;
+}
+
+.text-15 {
+    font-size: 3vw;
+    transform: skew(5deg, 20deg);
+    filter: blur(4px);
+    padding-left: 5%;
+}
+
+.text-15:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-16-container {
+    display: flex;
+}
+
+.text-16 {
+    font-size: 4vw;
+    transform: skew(-15deg, -20deg);
+    filter: blur(4px);
+    padding-left: 35%;
+}
+
+.text-16:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-17-container {
+    display: flex;
+}
+
+.text-17 {
+    font-size: 3vw;
+    transform: skew(5deg, 10deg);
+    filter: blur(4px);
+    padding-left: 5%;
+}
+
+.text-17:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-18-container {
+    display: flex;
+}
+
+.text-18 {
+    font-size: 2.5vw;
+    transform: skew(-25deg, -30deg);
+    filter: blur(4px);
+    padding-left: 50%;
+    padding-top: 10%;
+}
+
+.text-18:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-19-container {
+    display: flex;
+}
+
+.text-19 {
+    font-size: 2.5vw;
+    transform: skew(30deg, 25deg);
+    filter: blur(4px);
+    padding-left: 10%;
+    padding-top: 0;
+}
+
+.text-19:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}
+
+.text-20-container {
+    display: flex;
+}
+
+.text-20 {
+    font-size: 5vw;
+    transform: skew(-30deg, -25deg);
+    filter: blur(4px);
+    padding-left: 65%;
+    padding-top: 10%;
+    text-align: left;
+}
+
+.text-20:hover {
+    transform: none;
+    transition: 0.3s;
+    filter: none;
+}

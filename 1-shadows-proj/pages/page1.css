@@ -83,6 +83,11 @@ body {
     color: white !important;
 }
 
+.link:hover {
+    color: white;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto;
+}
+
 .title-container {
     display: flex;
     align-items: center;
