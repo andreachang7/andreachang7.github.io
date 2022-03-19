@@ -1,28 +1,84 @@
 html {
-    font-family: mr-eaves-xl, sans-serif;
-    color: rgb(0, 139, 220);
-    margin: 50px;
+    font-family: playfair-display, serif;
+    font-weight: 400;
+    color: green;
     margin-top: 0px;
-    background-color: #F8EDD9;
+    background-color: white;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>👉</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 .container {
     display: flex;
-    gap: 75%;
-    font-size: 12px;
-    margin: 0;
-    font-family: mr-eaves-xl-sans, sans-serif;
+    justify-content: space-around;
+    font-size: 0.75vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: playfair-display, serif;
     font-weight: 400;
     font-style: normal;
   }
 
-  .container:hover {
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>😱</text></svg>") 16 0,auto; /*!emojicursor.app*/
-  }
+body {
+      margin: 0;
+      padding: 0;
+ }
+
+@media only screen and (max-width: 700px), screen and (max-height: 700px){
+    .container {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: 7px;
+    }
+    .section-1 {
+        padding-top: 20em;
+    }
+}
+
+.heading-1:hover {
+    text-decoration-style: 1px green wavy;
+ }
+
+.heading-2:hover {
+    text-decoration-style: 1px green wavy;
+ }
+
+.heading-3:hover {
+    text-decoration-style: 1px green wavy;
+ }
+
+.heading-4:hover {
+    text-decoration-style: 1px green wavy;
+ }
+
+.section-1 {
+    padding-top: 10em;
+    /* padding: 10%;
+    padding-bottom: 10%; */
+}
+
+.image-1 {
+    width: 20vw;
+    z-index: 1;
+    padding: 0;
+    border-style: solid;
+    bord
+}
+
+.intro {
+    font-weight: 400;
+    font-size: 3vw;
+    font-style: italic;
+    text-align: justify;
+    padding-top: 0;
+    padding: 10%;
+    z-index: 0;
+}
 
 .projects {
-    position: fixed;
     text-align: center;
     font-size: 60px;
     top: 25%;
@@ -35,7 +91,7 @@ html {
 
 .projects a {
     text-decoration: none;
-    color: rgb(0, 139, 220);
+    color: green;
 }
 
 a:hover {
