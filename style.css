@@ -17,6 +17,11 @@ html {
     font-weight: 400;
     font-style: normal;
   }
+/* 
+model-viewer {
+    width: 80vw;
+    height: 80vh;
+} */
 
 body {
       margin: 0;
@@ -56,16 +61,16 @@ body {
 
 .section-1 {
     padding-top: 10em;
-    /* padding: 10%;
-    padding-bottom: 10%; */
 }
 
-.image-1 {
+#image-1 {
     width: 20vw;
-    z-index: 1;
+    z-index: 0;
     padding: 0;
-    border-style: solid;
-    bord
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    right: 5%;
 }
 
 .intro {
@@ -73,9 +78,12 @@ body {
     font-size: 3vw;
     font-style: italic;
     text-align: justify;
-    padding-top: 0;
-    padding: 10%;
-    z-index: 0;
+    padding-top: 5%;
+    margin-top: 0;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
 }
 
 .projects {
