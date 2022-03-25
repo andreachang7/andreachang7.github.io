@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peach Pit</title>
+    <script src="button.js"></script>
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kiu5six.css">
+    <link rel="icon" href="orange.png">
+</head>
+<body>
+    <div class="container">
+        <video width="100%" loop autoplay muted>
+            <source src="peach-vid.mp4" type="video/mp4">
+          </video>
+        <h1 class="title">Tommy's Party</h1>
+    </div>
+    <img src="peachpit.jpg" class="image-1">
+    <img src="peachpit1.jpeg" class="image-2">
+
+    <div class="body-container">
+        <ul class="toolbar">
+            <li>
+              <button id="buttonPartyMode">
+                Party Mode
+              </button>
+              <script type="text/javascript">
+                  var color = ["orange", "#205FEA", "#93CD48", "#EC8695", "#FFEE86", "#C794ED", "#2FC7CB"];
+                  var i = 0;
+                  document.querySelector("button").addEventListener("click", function(){
+                      i = i < color.length ? ++i : 0;
+                  document.querySelector("body").style.background = color[i]
+                  })
+              </script>
+            </li>
+            <li>
+                <!-- <p id="buttonPeachMode">🍑</p>
+                <script>
+                    document.getElementById("buttonPeachMode").onclick = function() {peachMode()};
+
+                    function peachMode() {
+                    document.getElementById("buttonPeachMode").innerHTML = "PEACH PIT";
+                }
+                </script> -->
+            </li>
+        </ul>
+        <p class="lyrics">
+            <br>
+            Hey there bud, how'd it go last night?<br>
+            I saw you at the band stand looking pretty slammed<br>
+            Did you see me feeding all my drinks to Cam?<br>
+            Probably not I guess, you were quite the mess<br>
+            And that girl who tagged along there with you<br>
+            I never caught her name, but she seemed fucked up too<br>
+            From where I sat she looked to be havin' fun<br>
+            Keepin' up with you just like I used to<br>
+            Hey there bud, how'd it go last night?<br>
+            I'm sorry to have ditched out but I was pretty high<br>
+            Heard from Leslie that on his stumble home<br>
+            Nat was pukin' up all that beer she'd drunk<br>
+            Though we didn't talk much, how'd your evening go?<br>
+            You barely spoke a word to me besides that slurred, "Hello"<br>
+            But I happened to see without even tryin'<br>
+            How she laughed with you just like I used to<br>
+            Hey there bud, how'd it go last night?<br>
+            I woke up to a pair of shoes I've not seen next to mine<br>
+            Did you whisper as you crept in through the door<br>
+            How you'd never done much like this before?<br>
+            I was thinking back just the other day<br>
+            Remember when we used to sneak out late to go and blaze?<br>
+            Seemed like loneliness was all we'd ever do<br>
+            But now she's knowing you just like I used to<br>
+        </p>
+        <p id="buttonPeachMode">🍑</p>
+        <script>
+            document.getElementById("buttonPeachMode").onclick = function() {peachMode()};
+
+            function peachMode() {
+            document.getElementById("buttonPeachMode").innerHTML = "PEACH PIT";
+        }
+        </script>
+    </div>
+</body>
+<footer>
+    <!-- <div class="bottom-container"> -->
+        <button id="scrollTopBtn">Top</button>
+    <!-- </div> -->
+</footer>
+</html>
