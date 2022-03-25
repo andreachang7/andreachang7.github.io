@@ -20,7 +20,7 @@ video {
     position: relative;
 }
 
-.title {
+#title {
     font-family: sculpin, sans-serif;
     font-weight: 900;
     font-size: 5vw;
@@ -32,7 +32,23 @@ video {
     transition-delay: 3s;
 }
 
-.image-1 {
+#btn {
+    width: 18vw;
+    z-index: 0;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+#btn-2 {
+    z-index: 0;
+    position: absolute;
+    width: 20vw;
+    top: 60%;
+    left: 70%;
+}
+
+/* .image-1 {
     z-index: 0;
     position: absolute;
     left: 20%;
@@ -46,7 +62,7 @@ video {
     width: 20vw;
     top: 60%;
     left: 70%;
-}
+} */
 
 .body-container {
     display: flex;
@@ -106,23 +122,23 @@ button:hover {
     text-decoration-style: dotted;
     text-decoration-color: orange; 
 }
-
+/* 
 footer {
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
     padding-bottom: 1rem;
-}
+} */
 
-.bottom-container {
+/* .bottom-container {
     background-color: none !important;
-}
+} */
 
-#scrollTopBtn {
+/* #scrollTopBtn {
     color: black;
     font-size: 1.5rem;
     cursor: pointer;
-}
+} */
   
 /* #topButton:hover {
     background-color: ; /* Add a dark-grey background on hover */

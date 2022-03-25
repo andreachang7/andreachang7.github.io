@@ -135,10 +135,12 @@ body {
 
 #projects {
     text-align: center;
+    position: absolute;
+    display: block;
     font-size: 60px;
     top: 25%;
     left: 23%;
-    line-height: 90px;
+    line-height: 100px;
     font-style: normal;
     font-weight: 200;
     height: 100vh;
