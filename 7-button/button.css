@@ -113,7 +113,8 @@ button:hover {
     font-size: 5em;
     color: orange;
     font-weight: 900;
-    z-index: 2;
+    z-index: 5;
+    left: 50rem;
 }
 
 #buttonPeachMode:active {
