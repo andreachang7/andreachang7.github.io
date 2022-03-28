@@ -1,0 +1,59 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: garamond-premier-pro-subhead, serif;
+    font-weight: 100;
+    background-color: black;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 0.75vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-right: 5%;
+}
+
+.home {
+    padding-right: 40px;
+}
+
+.home a {
+    text-decoration: none;
+    color: beige;
+}
+
+.home:hover {
+    font-style: italic;
+}
+
+.item-1 {
+    padding-right: 40px;
+}
+
+.item-1 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-2 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-1:active {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-1:hover {
+    font-style: italic;
+}
+
+.item-2:hover {
+    font-style: italic;
+}

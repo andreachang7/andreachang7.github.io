@@ -1,0 +1,102 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: garamond-premier-pro-subhead, serif;
+    font-weight: 100;
+    background-color: black;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 0.75vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-right: 5%;
+}
+
+.column {
+    padding-left: 60px;
+}
+
+.home {
+    padding-right: 40px;
+}
+
+.home a {
+    text-decoration: none;
+    color: beige;
+}
+
+.home:hover {
+    font-style: italic;
+}
+
+.item-1 {
+    padding-right: 40px;
+}
+
+.item-1 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-2 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-1:active {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-1:hover {
+    font-style: italic;
+}
+
+.item-2:hover {
+    font-style: italic;
+}
+
+.video-1:hover {
+    filter: blur(10px);
+}
+
+/* .movie-1 {
+    font-family: garamond-premier-pro-subhead, serif;
+    font-size: 10px;
+    color: beige;
+} */
+
+.video-2:hover {
+    filter: blur(10px);
+}
+
+.video-3:hover {
+    filter: blur(10px);
+}
+
+.video-4:hover {
+    filter: blur(10px);
+}
+
+.video-5:hover {
+    filter: blur(10px);
+}
+
+.video-6:hover {
+    filter: blur(10px);
+}
+
+.video-7:hover {
+    filter: blur(10px);
+}
+
+.video-8:hover {
+    filter: blur(10px);
+}
+
