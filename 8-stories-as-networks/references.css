@@ -6,6 +6,10 @@ html {
     background-color: black;
 }
 
+footer {
+    padding: 2vw;
+}
+
 .menu-container{
     display: flex;
     justify-content: flex-end;
@@ -20,6 +24,7 @@ html {
 
 .column {
     padding-left: 60px;
+    padding-top: 2vw;
 }
 
 .home {
@@ -62,15 +67,26 @@ html {
     font-style: italic;
 }
 
+/* .video-1 {
+    position: relative;
+    filter: blur(10px);
+} */
+
+/* .video-1:hover .description-1{
+    filter: none;
+    visibility: visible;
+}
+
+.description-1 {
+    font-size: 2vw;
+    position: absolute;
+    visibility: hidden;
+    color: beige;
+} */
+
 .video-1:hover {
     filter: blur(10px);
 }
-
-/* .movie-1 {
-    font-family: garamond-premier-pro-subhead, serif;
-    font-size: 10px;
-    color: beige;
-} */
 
 .video-2:hover {
     filter: blur(10px);
@@ -100,3 +116,30 @@ html {
     filter: blur(10px);
 }
 
+.video-9:hover {
+    filter: blur(10px);
+}
+
+.video-10:hover {
+    filter: blur(10px);
+}
+
+.video-11:hover {
+    filter: blur(10px);
+}
+
+.video-12:hover {
+    filter: blur(10px);
+}
+
+.video-13:hover {
+    filter: blur(10px);
+}
+
+.video-14:hover {
+    filter: blur(10px);
+}
+
+.video-15:hover {
+    filter: blur(10px);
+}

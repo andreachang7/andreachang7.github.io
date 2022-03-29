@@ -57,3 +57,81 @@ html {
 .item-2:hover {
     font-style: italic;
 }
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+}
+
+.video-10 {
+    width: 60vw;
+}
+
+.video-10:hover {
+    filter: drop-shadow(10px 10px 20px red) invert(75%);
+}
+
+.description {
+    font-size: 1vw;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    color: beige;
+    padding-left: 70vw;
+    padding-bottom: 2vw;
+}
+
+hr {
+    border: 0.75px solid beige;
+    width: 60vw;
+}
+
+.title {
+    font-size: 5vw;
+    color: beige;
+    font-weight: 100;
+    padding-left: 20vw;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+}
+
+.title:hover {
+    font-style: italic;
+}
+
+.section-3{
+    display: flex;
+    padding-left: 20vw;
+}
+
+.heading-1 {
+    font-size: 2vw;
+    color: beige;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    padding-right: 7vw;
+}
+
+.heading-1:hover {
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2vw;
+}
+
+.text {
+    font-size: 1vw;
+    color: beige;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    width: 35vw;
+    /* padding-left: 49.5vw; */
+    line-height: 2vw;
+    text-align: justify;
+}
+
+footer {
+    padding: 2vw;
+}
+
