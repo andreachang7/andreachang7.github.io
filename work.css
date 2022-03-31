@@ -1,0 +1,125 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 100;
+    color: beige;
+    background-color: black;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    color: beige;
+    font-size: 0.75vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-right: 5%;
+}
+
+footer {
+    padding: 2vw;
+}
+
+/* .project-list {
+    text-transform: capitalize;
+} */
+
+.item-3 {
+    padding-right: 40px;
+}
+
+.item-3 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-1 {
+    padding-right: 40px;
+}
+
+.item-1 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-2 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.item-1:active {
+    text-decoration: none;
+    color: rgb(111, 175, 235);
+}
+
+.item-1:hover {
+    font-style: italic;
+    color: rgb(111, 175, 235);
+}
+
+.item-2:hover {
+    font-style: italic;
+    color: rgb(111, 175, 235);
+}
+
+.item-3:hover {
+    font-style: italic;
+    color: rgb(111, 175, 235);
+}
+
+.project-list {
+    font-size: 4vw;
+}
+
+.project-1 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-2 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-3 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-4 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-5 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-6 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-7 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-8 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.project-9 a {
+    text-decoration: none;
+    color: beige;
+}
+
+hr {
+    border: 1px solid beige;
+    width: 95vw;
+}
