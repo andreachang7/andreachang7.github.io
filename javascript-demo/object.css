@@ -1,0 +1,81 @@
+
+body {
+    background-color: white;
+    margin: 0;
+  }
+  
+  .objects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .music {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    padding: 90px;
+    border: 2px solid black;
+    color: white;
+    width: 120px;
+    font-style: bold;
+    font-size: 20px;
+  }
+  
+  
+  .AceFrehley {
+    background-color: red;
+    background-image: url("music-artists/image-1.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+  
+  .AsapRocky {
+    background-color: red;
+    background-image: url("music-artists/image-2.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+  
+  .LadyGaga {
+    background-color: red;
+    background-image: url("music-artists/image-3.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+  
+  .JoeyBadass {
+    background-color: red;
+    background-image: url("music-artists/image-4.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+  
+  .FoxyBrown {
+    background-color: red;
+    background-image: url("music-artists/image-5.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+  
+  .Jay-Z {
+    background-color: red;
+    background-image: url("music-artists/image-6.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+  .MaryJBlige {
+    background-color: red;
+    background-image: url("music-artists/image-7.jpg");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
