@@ -47,37 +47,49 @@ function showMusicians() {
       var imageHolder = document.createElement("img");
       imageHolder.classList.add("images");
       imageHolder.src = musician.fields.photographs[0].url;
-      musicContainer.append(imageHolder);
+      musicContainer.appendChild(imageHolder);
 
-      var musicianName = document.createElement("h1");
+      var musicianName = document.createElement("div");
       musicianName.classList.add("musician-name");
       musicianName.innerText = musician.fields.name;
-      musicContainer.append(musicianName);
+      musicContainer.appendChild(musicianName);
 
       var musicianGenre = document.createElement("h1");
-      musicianGenre.classList.add("musician-genre");
+      musicianGenre.classList.add("genre");
       musicianGenre.innerText = musician.fields.genre;
       musicContainer.append(musicianGenre);
 
-      var musicianStreet = document.createElement("p");
-      musicianStreet.classList.add("musician-street");
-      musicianStreet.innerText = musician.fields.streetave;
-      musicContainer.append(musicianStreet);
+      var musicianDescription = document.createElement("p");
+      musicianDescription.classList.add("description");
+      musicianDescription.innerText = musician.fields.description;
+      musicContainer.append(musicianDescription);
 
-      var musicianNeighborhood = document.createElement("p");
-      musicianNeighborhood = classList.add("musician-neighborhood");
-      musicianNeighborhood.innerText = musician.fields.neighborhood;
-      musicContainer.append(musicianNeighborhood);
+      // var audioHolder = document.createElement("audio");
+      // audioHolder.src = musician.fields.attachments[0].url;
+      // audioHolder.classList.add("song-audio");
+      // audioHolder.autoplay = false;
+      // audioHolder.controls = true;
+      // audioHolder.muted = false;
+      // musicContainer.appendChild(audioHolder);
+
+      // var musicianStreet = document.createElement("p");
+      // musicianStreet.classList.add("musician-street");
+      // musicianStreet.innerText = musician.fields.streetave;
+      // musicContainer.append(musicianStreet);
   
 
 // filter buttons //
       musicContainer.addEventListener("click", function(){
           musicianName.classList.toggle("active");
+          musicianGenre.classList.toggle("active");
+          musicianDescription.classList.toggle("active");
+          musicianStreet.classList.toggle("active");
+          audioHolder.classList.toggle("active");
       })
 
-      var musicianLocation = musician.fields.locations;
-      musicianLocation.forEach(function(location){
-          musicContainer.classList.add(location)
+      var musicianFilters = musician.fields.filters;
+      musicianFilters.forEach(function(filter){
+          musicContainer.classList.add(filter)
       })
 
       var filterBronx = document.querySelector(".bronx");
@@ -150,11 +162,110 @@ function showMusicians() {
         }
       })
 
+      var filterPop = document.querySelector(".pop");
+      filterPop.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("pop")) {
+          musicContainer.style.background = "#FEB1A2";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterPop.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
+      var filterRock = document.querySelector(".rock");
+      filterRock.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("rock")) {
+          musicContainer.style.background = "#6700E7";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterRock.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
+      var filterRnb = document.querySelector(".rnb");
+      filterRnb.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("rnb")) {
+          musicContainer.style.background = "#A0C7AB";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterRnb.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
+      var filterTheatre = document.querySelector(".theatre");
+      filterTheatre.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("theatre")) {
+          musicContainer.style.background = "#C2BDF6";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterTheatre.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
+      var filterRap = document.querySelector(".rap");
+      filterRap.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("rap")) {
+          musicContainer.style.background = "#2143E1";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterRap.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
+      var filterIndie = document.querySelector(".indie");
+      filterIndie.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("indie")) {
+          musicContainer.style.background = "#F2EA77";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterIndie.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
+      var filterFolk = document.querySelector(".folk");
+      filterFolk.addEventListener("click", function(){
+
+        if (musicContainer.classList.contains("folk")) {
+          musicContainer.style.background = "#F25F4E";
+          musicContainer.style.border = "none";
+          musicContainer.style.display = "block";
+          filterFolk.classList.add("active");
+        } else {
+          musicContainer.style.background = "white";
+          musicContainer.style.display = "none";
+        }
+      })
+
       var filterReset = document.querySelector(".js-reset");
       filterReset.addEventListener("click", function(){
-        if (musicContainer.classList.contains("bronx", "brooklyn", "manhattan", "queens", "staten")) {
+        if (musicContainer.classList.contains("bronx", "brooklyn", "manhattan", "queens", "staten", "pop", "rock", "rnb", "theatre", "rap", "indie", "folk")) {
           musicContainer.style.background = "white";
           musicContainer.style.display = "block";
+          filterReset.classList.add("active");
         }
       })
 

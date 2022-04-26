@@ -26,7 +26,7 @@ html {
 }
 
 a:link { 
-  text-decoration: none;
+  text-decoration: none; 
   color: white;
  }
 
@@ -53,11 +53,52 @@ body {
   padding: 0;
 }
 
+.js-reset {
+  margin-left: 1vw;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 700 !important; 
+  font-style: normal;
+}
+
+.js-reset:hover {
+  font-style: italic;
+}
+
 .filter-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 2vw;
+    padding-top: 2vw;
+    position: relative;
+    display: inline-block;
+    width: 13vw;
+    text-align: center;
+    margin-left: 2vw;
+}
+
+.filters {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.filter-container:hover .filters {
+  display: block;
+}
+ 
+.dropdown {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.dropdown:hover {
+  font-style: italic;
+  cursor: pointer;
 }
 
 .bronx {
@@ -70,6 +111,7 @@ body {
   border-radius: 25px;
   color: black;
   font-size: 1.5vw;
+  margin-bottom: 0.5vw;
 }
  
 .bronx:hover {
@@ -93,27 +135,28 @@ body {
   border-radius: 25px;
   color: black;
   font-size: 1.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .brooklyn:hover {
   color: white;
-  background: black;
+  background-color: black;
   cursor: pointer;
 }
 
 .brooklyn:active {
   color: white;
-  background: green;
+  background-color: green;
 }
 
 .brooklyn:focus {
   color: white;
-  background: green;
+  background-color: green;
 }
 
 .brooklyn:visited {
   color: white;
-  background: green;
+  background-color: green;
 }
 
 .queens {
@@ -126,6 +169,7 @@ body {
   border-radius: 25px;
   color: black;
   font-size: 1.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .queens:hover {
@@ -149,6 +193,7 @@ body {
   border-radius: 25px;
   color: black;
   font-size: 1.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .manhattan:hover {
@@ -172,6 +217,7 @@ body {
   border-radius: 25px;
   color: black;
   font-size: 1.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .staten:hover {
@@ -204,6 +250,234 @@ body {
 }
 
 .js-reset:active {
+  color: white;
+  background: black;
+}
+
+/* GENRE FILTERS */
+
+/* .genre-filter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1vw;
+} */
+
+.genre-container {
+  padding-top: 2vw;
+  position: relative;
+  display: inline-block;
+  width: 13vw;
+  text-align: center;
+  margin-left: 1vw;
+}
+
+.genre-filters {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.genre-container:hover .genre-filters {
+  display: block;
+}
+
+.genre-dropdown {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+  margin-bottom: 0.5vw;
+  animation: genreAnimation 2s linear infinite;
+  animation-play-state: paused;
+}
+
+.genre-dropdown:hover {
+  font-style: italic;
+  cursor: pointer;
+  animation-play-state: running;
+}
+
+/* @keyframes genreAnimation {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: pink;
+  }
+} */
+
+.pop {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.pop:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.pop:active {
+  color: white;
+  background: black;
+}
+
+.rock {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.rock:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.rock:active {
+  color: white;
+  background: black;
+}
+
+.rnb {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.rnb:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.rnb:active {
+  color: white;
+  background: black;
+}
+
+.rap {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.rap:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.rap:active {
+  color: white;
+  background: black;
+}
+
+.indie {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.indie:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.indie:active {
+  color: white;
+  background: black;
+}
+
+.theatre {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.theatre:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.theatre:active {
+  color: white;
+  background: black;
+}
+
+.folk {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+}
+ 
+.folk:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.folk:active {
   color: white;
   background: black;
 }
@@ -257,20 +531,121 @@ body {
   display: block;
 }
 
-.musician-genre {
+.genre {
   font-size: 1.5vw;
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   width: 25vw;
   margin-top: 0;
   display: none;
   text-align: center;
 }
 
-.musician-neighborhood {
+.genre.active {
+  display: block;
+}
+
+.description {
+  font-size: 1vw;
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 400;
   font-style: normal;
+  width: 20vw;
+  margin-top: 0;
+  margin-right: 0;
+  padding-right: 0;
+  display: none;
+  text-align: justify;
 }
 
+.description.active {
+  display: block;
+  width: 20vw;
+  margin: 0;
+  padding: 0;
+}
+
+.musician-street {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 20vw;
+  margin-top: 0;
+  display: none;
+  text-align: center;
+}
+
+.musician-street.active {
+  display: block;
+}
+
+.song-audio {
+  display: block;
+}
+
+.song-audio.active {
+  display: block;
+}
+
+footer {
+  padding: 2vw;
+  margin-bottom: 5vw;
+}
+
+.party-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.party-button {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  padding: 0.6vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5vw;
+  text-align: center;
+  width: 25vw;
+  animation: gradientHover 2s ease infinite;
+  animation-play-state: paused;
+}
+
+.party-button:hover {
+  padding: 0.6vw;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation-play-state: running;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='46' height='55' viewport='0 0 100 100' style='fill:black;font-size:28px;'><text y='50%'>🕺✨ </text></svg>") 16 0,auto;
+}
+
+@keyframes gradientHover {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a.party-button:link { 
+  text-decoration: none;
+ }
+
+a.party-button:visited { 
+  text-decoration: none;
+ }
+
+a.party-button:hover { 
+  text-decoration: none;
+ }
+
+a.party-button:active { 
+  text-decoration: none;
+ }

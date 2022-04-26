@@ -1,0 +1,119 @@
+html {
+    background-color: white;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 2vw;
+    padding: 0;
+  }
+
+.menu {
+  background-color: black;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.menu-item1{
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 1.5vw;
+}
+
+a:link { 
+  text-decoration: none;
+  color: white;
+ }
+
+
+a:visited { 
+  text-decoration: none;
+  color: white;
+ }
+
+
+a:hover { 
+  text-decoration: none;
+  color: orange;
+ }
+
+a:active { 
+    text-decoration: none;
+    color: white;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.video-items {
+    padding-left: 60px;
+    padding-top: 2vw;
+}
+
+.video-1 {
+    border-radius: 40px;
+    filter: blur(10px);
+}
+
+.video-1:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.video-2 {
+    border-radius: 40px;
+    filter: blur(10px);
+}
+
+.video-2:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.video-3 {
+    border-radius: 40px;
+    filter: blur(10px);
+}
+
+.video-3:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.video-4 {
+    border-radius: 40px;
+    filter: blur(10px);
+}
+
+.video-4:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.video-5 {
+    border-radius: 40px;
+    filter: blur(10px);
+    
+}
+
+.video-5:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+/* #mydiv {
+    position: absolute;
+    z-index: 9;
+}
+  
+#mydivheader {
+    cursor: move;
+    z-index: 10;
+} */
