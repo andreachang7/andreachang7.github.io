@@ -13,30 +13,10 @@ html {
     padding-bottom: 0;
     margin-bottom: 0;
     z-index: 1;
-    animation: titleAnimation 3s infinite ease-in-out;
-    animation-play-state: paused;
 }
 
 .title:hover {
-    animation-play-state: running;
-}
-
-@keyframes titleAnimation {
-    0% {
-        color: orange;
-    }
-    25% {
-        color: #AC2B2F;
-    }
-    50% {
-        color: #569D3B;
-    }
-    75% {
-        color: #96C4EB;
-    }
-    100% {
-        color: #C89FF3;
-    }
+    cursor: pointer;
 }
 
 a:link {
@@ -51,7 +31,6 @@ a:visited {
   
 a:hover {
     text-decoration: none;
-    color: orange;
   }
 
 a:active {
@@ -113,34 +92,63 @@ a:active {
     filter: contrast(130%);
 }
 
+.photo-container {
+    margin-bottom: 5vw;
+}
 
-/* 
-.arrow-1 {
-    width:120px;
-    height: 30px;
-    display: flex;
+#menu-container {
     color: white;
-    z-index: 3;
-    position: absolute;
-    right: 6vw;
-    bottom: 4.5vw;
-  }
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5vw;
+    overflow: hidden;
 
-.arrow-1:before {
-    content: "";
-    background: currentColor;
-    width:15px;
-    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
-    animation: arrowOne 2.2s infinite linear;
-  }
+}
 
-  @keyframes arrowOne {
-    90%,100%{flex-grow: 1}
-  }
+#item-1 {
+    margin-left: 3vw;
+    
+}
 
-.arrow-1:hover {
-    color: orange;
-} */
+#item-1:hover {
+    cursor: pointer;
+    animation-play-state: running;
+}
+
+#item-2 {
+    margin-left: 40vw;
+}
+
+#item-2:hover {
+    cursor: pointer;
+}
+
+#item-3 {
+    margin-left: 85vw;
+}
+
+#item-3:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    color: white;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+    font-size: 0.75vw;
+    text-align: center;
+    line-height: 25px;
+}
+
 
 
 

@@ -649,3 +649,23 @@ a.party-button:hover {
 a.party-button:active { 
   text-decoration: none;
  }
+
+footer {
+  padding-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin-bottom: 0;
+  padding-bottom: 2vw;
+}
+
+.info {
+  color: white;
+  font-family: aktiv-grotesk-thin, sans-serif;
+  font-weight: 200;
+  font-style: normal; 
+  font-size: 0.75vw;
+  text-align: center;
+  line-height: 25px;
+}
