@@ -6,6 +6,9 @@ html {
     color: black;
     font-size: 2vw;
     padding: 0;
+    margin: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
 .menu {
@@ -15,6 +18,7 @@ html {
   justify-content: center;
   align-items: center;
   margin: 0;
+  margin-bottom: 2vw;
 }
 
 .menu-item1{
@@ -52,14 +56,18 @@ body {
     padding: 0;
 }
 
+.video-container {
+
+}
+
 .video-items {
     padding-left: 60px;
     padding-top: 2vw;
 }
 
 .video-1 {
-    border-radius: 40px;
-    filter: blur(10px);
+    /* border-radius: 40px; */
+    /* filter: blur(10px); */
 }
 
 .video-1:hover {
@@ -68,8 +76,8 @@ body {
 }
 
 .video-2 {
-    border-radius: 40px;
-    filter: blur(10px);
+    /* border-radius: 40px; */
+    /* filter: blur(10px); */
 }
 
 .video-2:hover {
@@ -78,8 +86,8 @@ body {
 }
 
 .video-3 {
-    border-radius: 40px;
-    filter: blur(10px);
+    /* border-radius: 40px; */
+    /* filter: blur(10px); */
 }
 
 .video-3:hover {
@@ -88,8 +96,8 @@ body {
 }
 
 .video-4 {
-    border-radius: 40px;
-    filter: blur(10px);
+    /* border-radius: 40px; */
+    /* filter: blur(10px); */
 }
 
 .video-4:hover {
@@ -98,8 +106,8 @@ body {
 }
 
 .video-5 {
-    border-radius: 40px;
-    filter: blur(10px);
+    /* border-radius: 40px; */
+    /* filter: blur(10px); */
     
 }
 
@@ -108,12 +116,21 @@ body {
     cursor: pointer;
 }
 
-/* #mydiv {
-    position: absolute;
-    z-index: 9;
+footer {
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 4vw;
 }
-  
-#mydivheader {
-    cursor: move;
-    z-index: 10;
-} */
+
+.info {
+    color: white;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+    font-size: 0.75vw;
+    text-align: center;
+    line-height: 25px;
+}
