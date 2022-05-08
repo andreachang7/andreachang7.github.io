@@ -122,16 +122,21 @@ a:active {
 }
 
 .box-1 {
-    background-color:lightpink;
-    color: black;
+    background-color: white;
+    color: red;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 100;
     font-style: normal;
     width: 25vw;
     padding: 1vw;
-    border: 2.5px solid black;
+    border: 2.5px solid red;
     margin-left: 20vw;
     cursor: pointer;
+}
+
+.box-1:hover {
+    background-color: red;
+    color: white;
 }
 
 .title {
@@ -143,9 +148,50 @@ a:active {
 
 .description {
     font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: justify;
+    color: red;
+    line-height: 1.5vw;
+}
+
+.description:hover {
+    color: white;
+}
+
+.description-2 {
+    font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: justify;
+    color: red;
+    line-height: 2vw;
+}
+
+.description-2:hover {
+    color: white;
+}
+
+.box-2:hover {
+    background-color: red;
+    color: white;
+}
+
+.description-3 {
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    color: red;
+}
+
+.box-3:hover {
+    background-color: red;
+    color: white;
+}
+
+.description-3:hover {
+    color: white;
 }
 
 .image-2 {
@@ -153,14 +199,14 @@ a:active {
 }
 
 .box-2 {
-    background-color:dodgerblue;
-    color: black;
+    background-color: white;
+    color: red;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 100;
     font-style: normal;
     width: 25vw;
     padding: 1vw;
-    border: 2.5px solid black;
+    border: 2.5px solid red;
     margin-left: 50vw;
     cursor: pointer;
     margin-top: 2vw;
@@ -174,37 +220,40 @@ span:nth-child(1){
     margin-bottom: 2vw;
 }
 
+a {
+    color: red;
+}
+
 a.link-1:link { 
     text-decoration: none; 
-    color: black;
+    color: white;
 }
 
 a.link-1:visited { 
     text-decoration: none; 
-    color: black;
+    color: red;
 }
         
 a.link-1:hover { 
     text-decoration: none; 
-    color: black;
-    text-decoration: wavy underline;
-
+    color: white;
+    /* text-decoration: wavy underline; */
 }
         
 a.link-1:active { 
     text-decoration: none; 
-    color: black;
+    color: red;
 }
 
 .box-3 {
-    background-color:khaki;
-    color: black;
+    background-color: white;
+    color: red;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 100;
     font-style: normal;
     width: 15vw;
     padding: 1vw;
-    border: 2.5px solid black;
+    border: 2.5px solid red;
     margin-left: 30vw;
     cursor: pointer;
     margin-top: 2vw;
