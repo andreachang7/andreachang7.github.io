@@ -1,0 +1,195 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: red;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.menu-container{
+    display: flex;
+    font-size: 0.5vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-right: 5%;
+    border-radius: 6vw;
+    margin-top: 1vw;
+    margin-right: 2vw;
+    margin-left: 3vw;
+    color: red;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vw;
+    margin-right: 60vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    color: red;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: white;
+    -webkit-text-stroke: 1.25px red;}
+
+a:link { 
+    text-decoration: none; 
+    color: red;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: red;
+}
+        
+a:hover { 
+    text-decoration: none; 
+    color: red;
+}
+        
+a:active { 
+    text-decoration: none; 
+    color: red;
+}
+
+.item-1 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-1:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-2 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-2:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-3 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-3:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-4 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-4:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.title {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    -webkit-text-stroke: 1.5px red;
+    margin-left: 5vw;
+}
+
+.title:hover {
+    color: red;
+    -webkit-text-stroke: none;
+    cursor: pointer;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-1 {
+    font-size: 2vw;
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 12vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.text-1:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.info-1:hover {
+    transform: rotate(-45deg);
+}
+
+.info-2:hover {
+    transform: rotate(45deg);
+}
+
+.info-3:hover {
+    transform: rotate(-45deg);
+}
+
+.button {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    background-color: red;
+}
+
+
+
+
+
+
+footer {
+    height: 10vw;
+    background-color: black;
+    margin-top: 10vw;
+    color: white;
+}
+
+.credit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1vw;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2.5vw;
+    line-height: 1.5vw;
+}

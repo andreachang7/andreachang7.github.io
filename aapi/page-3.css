@@ -1,0 +1,247 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: red;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.menu-container{
+    display: flex;
+    font-size: 0.5vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-right: 5%;
+    border-radius: 6vw;
+    margin-top: 1vw;
+    margin-right: 2vw;
+    margin-left: 3vw;
+    color: red;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vw;
+    margin-right: 60vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    color: red;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: white;
+    -webkit-text-stroke: 1.25px red;}
+
+a:link { 
+    text-decoration: none; 
+    color: red;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: red;
+}
+        
+a:hover { 
+    text-decoration: none; 
+    color: red;
+}
+        
+a:active { 
+    text-decoration: none; 
+    color: red;
+}
+
+.item-1 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-1:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-2 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-2:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-3 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-3:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-4 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-4:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+}
+
+.image-1 {
+    width: 60vw;
+    display: block;
+}
+
+hr {
+    border: 1px solid red;
+    width: 79.5vw;
+    margin: 0;
+    margin-left: 10.5vw;
+}
+
+.info-container {
+    display: flex;
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-top: 1vw;
+    margin: 1vw;
+}
+
+.product-info {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-1 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-2 {
+    text-align: right;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+}
+
+hr.breaker-1 {
+    width: 30vw;
+    margin: 0;
+}
+
+.description {
+    width: 30vw;
+    text-align: justify;
+    font-size: 1.25vw;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 15vw;
+    font-size: 2vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.button:hover {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+
+.sticker {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid red;
+    border-radius: 50%;
+    color: red;
+    background-color: white;
+    width: 8vw;
+    text-align: center;
+    margin: 0;
+    padding: 1vw;
+    padding-bottom: 1vw;
+    z-index: 2;
+    transform: rotate(-25deg);
+    margin-left: 17vw;
+
+    /* font-size: 3vw; */
+}
+
+.sticker:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    height: 10vw;
+    background-color: black;
+    margin-top: 5vw;
+    color: white;
+}
+
+.credit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1vw;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2.5vw;
+    line-height: 1.5vw;
+}

@@ -1,0 +1,271 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: red;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.menu-container{
+    display: flex;
+    font-size: 0.5vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-right: 5%;
+    border-radius: 6vw;
+    margin-top: 1vw;
+    margin-right: 2vw;
+    margin-left: 3vw;
+    color: red;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vw;
+    margin-right: 60vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    color: red;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: white;
+    -webkit-text-stroke: 1.25px red;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: red;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: red;
+}
+        
+a:hover { 
+    text-decoration: none; 
+    color: red;
+}
+        
+a:active { 
+    text-decoration: none; 
+    color: red;
+}
+
+.item-1 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-1:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-2 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-2:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-3 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-3:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.item-4 {
+    margin-right: 2.5vw;
+    margin-top: 2vw;
+}
+
+.item-4:hover {
+    font-style: italic;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+.event-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1vw;
+    margin: 1vw;
+}
+
+.header {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /* text-align: center; */
+    font-size: 3.5vw;
+    margin-right: 15vw;
+    z-index: 0;
+}
+
+.sticker {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid red;
+    border-radius: 50%;
+    color: red;
+    background-color: white;
+    width: 10vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    z-index: 2;
+    /* font-size: 3vw; */
+}
+
+.sticker:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transform: rotate(-45deg);
+
+}
+
+.description {
+    width: 30vw;
+    font-size: 1.25vw;
+    text-align: justify;
+    margin-bottom: 3vw;
+}
+
+.image-1 {
+    width: 40vw;
+    border-radius: 50px;
+    margin-left: 5vw;
+    z-index: 0;
+}
+
+hr {
+    border: 0.75px solid red;
+    width: 30vw;
+    margin: 0;
+}
+
+.info-container {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-1 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.info-2 {
+    text-align: right;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+}
+
+.section-2 {
+    margin-top: 5vw; 
+    position: relative;
+    width: 50vw;
+}
+
+.section-2:hover {
+    cursor: pointer;
+}
+
+.tickets {
+    width: 50vw;
+    border-radius: 50px;
+    display: block;
+    margin-left: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(237, 28, 36);
+    border-radius: 50px;
+    margin-left: 50%;
+  }
+  
+.section-2:hover .overlay {
+    opacity: 1;
+  }
+  
+.title {
+    color: rgb(252, 250, 236);
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title:hover {
+    font-style: italic;
+}
+  
+
+
+footer {
+    height: 10vw;
+    background-color: black;
+    margin-top: 5vw;
+    color: white;
+}
+
+.credit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1vw;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2.5vw;
+    line-height: 1.5vw;
+}
+
+
