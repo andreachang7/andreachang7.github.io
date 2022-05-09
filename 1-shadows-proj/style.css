@@ -4,7 +4,6 @@ html {
     /* font-family: adobe-caslon-pro, serif; */
     overflow: hidden;
     margin:0;
-    cursor: url("arrow.png"), auto;
 }
 
 body {
@@ -248,4 +247,11 @@ button {
     padding-left: 250px;
     z-index: 1;
     font-family: adobe-caslon-pro, serif;
+}
+
+#button-1:hover {
+    cursor: pointer;
+    font-family: park-lane, serif;
+    font-weight: 300;
+    font-style: normal;
 }

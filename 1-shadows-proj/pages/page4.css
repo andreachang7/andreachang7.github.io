@@ -1,7 +1,6 @@
 html {
     background-color: black;
     color: white;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌙</text></svg>") 16 0,auto;
 }
 
 ::-moz-selection {
@@ -16,8 +15,8 @@ html {
 
 .menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-size: 0.75vw;
     padding: 50px;
     padding-top: 0;
@@ -35,7 +34,7 @@ html {
 }
 
 .link:hover {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto;;
+    cursor: pointer;
 }
 
 .title-container {
@@ -60,7 +59,6 @@ html {
     filter: none !important;
     cursor: pointer;
     animation: glowAnimation 5s ease-in-out infinite;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>✨</text></svg>") 16 0,auto; 
 }
 
 @keyframes glowAnimation {
@@ -126,7 +124,7 @@ html {
 .text-1:hover { 
     text-decoration: underline wavy;
     font-style: italic;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>☂️</text></svg>") 16 0,auto;  
+    cursor: pointer;  
 }
 
 .text-2 {
@@ -136,7 +134,7 @@ html {
 .text-2:hover { 
     text-decoration: underline wavy;
     font-style: italic;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌻</text></svg>") 16 0,auto; 
+    cursor: pointer;
     animation: textGlow1 1s ease-in-out infinite alternate;
 }
 
@@ -152,14 +150,14 @@ html {
 .text-3:hover {
     text-decoration: underline wavy;
     font-style: italic;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>💨</text></svg>") 16 0,auto; 
+    cursor: pointer;
     animation: textGlow1 1s ease-in-out infinite alternate;
 }
 
 .text-4:hover {
     text-decoration: underline wavy;
     font-style: italic;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>👴</text></svg>") 16 0,auto; 
+    cursor: pointer;
     animation: textGlow1 1s ease-in-out infinite alternate;
 }
 
@@ -969,11 +967,7 @@ html {
     background-color: white;
     color: black;
     padding-bottom: 5%;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌚</text></svg>") 16 0,auto; 
-}
-
-.button-2 .passage-2 {
-    margin-left: 50%;
+    cursor: pointer;
 }
 
 .passage-2 {
@@ -985,6 +979,7 @@ html {
     transform: scale(0.94);
     animation: scale2 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
     padding-bottom: 5%;
+    margin-left: 50%;
   }
 
 @keyframes scale2 {
@@ -1599,7 +1594,7 @@ span-2 {
     border: none;
     font-size: 1.5vw;
     font-family: big-caslon-pro, serif;
-    margin-left: 10%;
+    margin-left: 50%;
     margin-top: 5%;
     text-align: center;
 }
@@ -1608,7 +1603,7 @@ span-2 {
     background-color: black;
     color: white;
     padding-bottom: 5%;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='56' height='67' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>🌟</text></svg>") 16 0,auto; 
+    cursor: pointer;
 }
 
 .passage-3 {
@@ -1647,4 +1642,89 @@ span-2 {
     margin-left: 10%;
     margin-top: 5%;
     text-align: center;
+}
+
+.next-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 2vw;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+  padding: 1vw;
+  margin-right: 5vw;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+a.page-link:link {
+  text-decoration: none; 
+  color: white;
+}
+
+a.page-link:visited { 
+  text-decoration: none; 
+  color: white;
+}
+      
+a.page-link:hover { 
+  text-decoration: none; 
+  color: black;
+}
+      
+a.page-link:active { 
+  text-decoration: none; 
+  color: white;
+}
+
+.button-4 {
+  font-size: 1.25vw;
+  color: black;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+  padding: 1vw;
+}
+
+.button-4:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+footer {
+  height: 10vw;
+  background-color: white;
+  margin-top: 5vw;
+  color: black;
+}
+
+.credit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 1vw;
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 2.5vw;
+  line-height: 1.5vw;
 }

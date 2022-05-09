@@ -11,18 +11,29 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-size: 0.75vw;
     padding: 50px;
     padding-top: 0;
     font-weight: 300;
     font-style: normal;
+    background-color: white;
+    padding-bottom: 0;
+    overflow: hidden;
+    /* position: fixed; */
+    width: 95vw;
+    /* border-bottom: 1px solid black; */
 }
 
-.menu:hover {
-    text-shadow: 2px 2px 10px black;
-    color: white;
-}
+.menu a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
 
 .link {
     text-decoration: none;
@@ -51,13 +62,15 @@ body {
 
 .text-1 {
     font-family: adobe-caslon-pro, serif;
-    font-size: 2vw;
+    font-size: 1.75vw;
     display: flex;
     margin: 10%;
+    margin-top: 1vw;
     text-align: justify;
     z-index: 2;
     pointer-events: none;
     transition: transform 0.1s linear;
+    margin-bottom: 2vw;
     /* color: white; */
 }
 
@@ -97,4 +110,95 @@ body {
     width: 100%;
     padding: 20px 0;
     display: inline-block;
+}
+/* 
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.next-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 2vw;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    padding: 1vw;
+    margin-right: 5vw;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+a.page-link:link {
+    text-decoration: none; 
+    color: black;
+}
+
+a.page-link:visited { 
+    text-decoration: none; 
+    color: black;
+}
+        
+a.page-link:hover { 
+    text-decoration: none; 
+    color: white;
+}
+        
+a.page-link:active { 
+    text-decoration: none; 
+    color: black;
+}
+
+.button-4 {
+    font-size: 1.25vw;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    padding: 1vw;
+  }
+  
+  .button-4:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+footer {
+    height: 10vw;
+    background-color: black;
+    margin-top: 5vw;
+    color: white;
+}
+  
+
+.credit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1vw;
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 2.5vw;
+    line-height: 1.5vw;
 }
