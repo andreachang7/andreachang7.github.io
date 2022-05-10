@@ -129,6 +129,11 @@ footer {
     color: beige;
 }
 
+.project-12 a {
+    text-decoration: none;
+    color: beige;
+}
+
 hr {
     border: 1px solid beige;
     width: 95vw;

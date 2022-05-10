@@ -1,0 +1,143 @@
+html {
+    background-color: white;
+    font-family: aktiv-grotesk-extended,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.intro {
+    text-align: center;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.video-1 {
+    border: 2px solid black;
+}
+
+.video-1:hover {
+    width: 800px;
+    cursor: pointer;
+    transition: 2s;
+    filter: drop-shadow(20px 20px 7px);
+    margin-bottom: 2vw;
+}
+
+.subtitle-1 {
+    font-family: aktiv-grotesk-extended,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.section-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.section-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-family: aktiv-grotesk-extended,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5vw;
+    padding: 15px;
+}
+
+.link:hover {
+    background-color: black;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black;
+}
+        
+a:hover { 
+    text-decoration: none; 
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+        
+a:active { 
+    text-decoration: none; 
+    color: black;
+}
+
+footer {
+    height: 10vw;
+    background-color: black;
+    margin-top: 5vw;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.credit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 0.75vw;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2.5vw;
+    line-height: 1.5vw;
+}
