@@ -1,3 +1,9 @@
+$('.round').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.arrow').toggleClass('bounceAlpha');
+});
+
 // passage1
 
 var i = 0;
