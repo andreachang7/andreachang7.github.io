@@ -48,7 +48,13 @@
                 </script> -->
             </li>
         </ul>
-        <p class="lyrics">
+
+        <div class="intro-container">
+            <h2 class="image-instructions">click on images to change title color!</h2>
+            <h1 class="instructions">click on the lyrics to change color :) </h1>
+        </div>
+
+        <p id="lyrics" onclick="myFunction()">
             <br>
             Hey there bud, how'd it go last night?<br>
             I saw you at the band stand looking pretty slammed<br>
@@ -76,7 +82,7 @@
             But now she's knowing you just like I used to<br>
         </p>
         <p id="buttonPeachMode">🍑</p>
-            <script>
+            <script type="text/javascript">
                 document.getElementById("buttonPeachMode").onclick = function() {peachMode()};
 
                 function peachMode() {

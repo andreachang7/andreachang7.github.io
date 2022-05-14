@@ -28,7 +28,7 @@ video {
     /* display: inline-block; */
     z-index: 2;
     position: absolute;
-    color: orange;
+    color: white;
     transition-delay: 3s;
 }
 
@@ -82,10 +82,21 @@ ul {
 .toolbar {
     display: block;
 }
+
+#buttonPartyMode {
+    border-radius: 50px;
+    padding: 1vw;
+}
+
+#buttonPartyMode:hover {
+    background-color: orange;
+    color: white;
+}
   
 button {
     font-size: 1rem;
-    background: orange;
+    /* background: orange; */
+    border-radius: 50px;
     border: none;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
@@ -96,13 +107,53 @@ button:hover {
     cursor: pointer;
 }
 
-.lyrics {
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-instructions {
+    font-size: 1vw;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 1vw;
+    margin-top: 5vw;
+    margin-right: 2vw;
+}
+
+.image-instructions:hover {
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.instructions {
+    font-size: 1vw;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 1vw;
+    margin-top: 5vw;
+}
+
+.instructions:hover {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+
+#lyrics {
     text-align: center;
     font-size: 1.5em;
     color: black;
     line-height: 170%;
     z-index: 1;
     position: relative;
+    /* font-style: italic; */
+}
+
+#lyrics:hover {
+    cursor: pointer;
     font-style: italic;
 }
 
@@ -115,6 +166,10 @@ button:hover {
     font-weight: 900;
     z-index: 5;
     left: 50rem;
+}
+
+#buttonPeachMode:hover {
+    cursor: pointer;
 }
 
 #buttonPeachMode:active {
