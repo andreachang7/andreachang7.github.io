@@ -1,9 +1,13 @@
 function changeTitle() {
     document.getElementById("title").style.color = "pink";
+    document.getElementById("title").style.fontStyle = "italic";
+    document.getElementById("title").style.fontWeight = "400";
 }
 
 function changeTitleTwo() {
     document.getElementById("title").style.color = "green";
+    document.getElementById("title").style.fontWeight = "100";
+    document.getElementById("title").style.fontStyle = "normal";
 }
 
 function myFunction() {
