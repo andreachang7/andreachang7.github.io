@@ -1,0 +1,67 @@
+html {
+    font-family: aktiv-grotesk-extended, sans-serif;
+} 
+
+body {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.5;
+    color: beige;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 3vw;
+}
+
+p {
+    margin-right: 3vw;
+}
+
+section.panner {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.panner div.world {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    display: grid;
+    grid-template-columns:600px 600px 600px 600px;
+    grid-gap: 48px;
+    padding: 48px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 24px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section {
+        grid-gap: 22 px;
+    }
+}
+
+img {
+    width: 600px;
+}
+
