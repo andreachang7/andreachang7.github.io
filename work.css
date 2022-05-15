@@ -115,8 +115,11 @@ a:active {
 }
 
 .project-list {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-left: 2vw;
+    margin-top: 5vw;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
 }
 
 .project-1:hover {
