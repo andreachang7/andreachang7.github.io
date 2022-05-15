@@ -32,6 +32,24 @@ footer {
     padding-right: 40px;
 }
 
+.item-2 {
+    padding-right: 40px;
+}
+
+.item-4 {
+    padding-right: 40px;
+}
+
+.item-4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-4:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
 .item-3 a {
     text-decoration: none;
     color: black;
@@ -53,22 +71,21 @@ footer {
 
 .item-1:active {
     text-decoration: none;
-    color: rgb(111, 175, 235);
 }
 
 .item-1:hover {
     font-style: italic;
-    color: rgb(111, 175, 235);
+    text-decoration: line-through;
 }
 
 .item-2:hover {
     font-style: italic;
-    color: rgb(111, 175, 235);
+    text-decoration: line-through;
 }
 
 .item-3:hover {
     font-style: italic;
-    color: rgb(111, 175, 235);
+    text-decoration: line-through;
 }
 
 .section-1 {
@@ -302,6 +319,30 @@ span:nth-child(1):hover {
     height: 90px;
     background-color: white;
 }
+
+.class-1 {
+    font-weight: 100;
+}
+
+.class-1 a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+.class-1 a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+.class-1 a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  
+.class-1 a:active {
+    text-decoration: underline;
+    color: black;
+  }
 
 footer {
     height: 5vw;

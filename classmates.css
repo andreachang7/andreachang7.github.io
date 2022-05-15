@@ -1,0 +1,135 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    color: black;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.menu-container{
+    display: flex;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    justify-content: flex-end;
+    color: black;
+    font-size: 0.5vw;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-right: 5%;
+}
+
+footer {
+    padding: 2vw;
+}
+
+.item-3 {
+    padding-right: 40px;
+}
+
+.item-2 {
+    padding-right: 40px;
+}
+
+.item-4 {
+    padding-right: 40px;
+}
+
+.item-4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-4:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.item-3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-1 {
+    padding-right: 40px;
+}
+
+.item-1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-1:active {
+    text-decoration: none;
+    text-decoration: line-through;
+}
+
+.item-1:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.item-2:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.item-3:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+.classmate-container {
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.class {
+    font-weight: 100;
+}
+
+.class a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+.class a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+.class a:hover {
+    text-decoration: line-through;
+    color: black;
+  }
+  
+.class a:active {
+    text-decoration: line-through;
+    color: black;
+  }
+
+
+footer {
+    height: 5vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vw;
+}
+ 
+.info-1 {
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}

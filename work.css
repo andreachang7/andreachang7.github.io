@@ -68,6 +68,24 @@ a:active {
     text-decoration: line-through;
 }
 
+.item-2 {
+    padding-right: 40px;
+}
+
+.item-4 {
+    padding-right: 40px;
+}
+
+.item-4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-4:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
 .item-3 a:hover {
     text-decoration: line-through;
 }
