@@ -1,17 +1,22 @@
 html {
     padding: 0;
     margin: 0;
-    font-family: aktiv-grotesk-thin, sans-serif;
+    font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 100;
-    color: beige;
-    background-color: black;
+    color: black;
+    background-color: white;
+}
+
+body {
+    margin: 0;
 }
 
 .menu-container{
     display: flex;
+    font-family: aktiv-grotesk-extended, sans-serif;
     justify-content: flex-end;
-    color: beige;
-    font-size: 0.75vw;
+    color: black;
+    font-size: 0.5vw;
     margin: 0;
     margin-left: 0;
     margin-right: 0;
@@ -29,7 +34,7 @@ footer {
 
 .item-3 a {
     text-decoration: none;
-    color: beige;
+    color: black;
 }
 
 .item-1 {
@@ -38,12 +43,12 @@ footer {
 
 .item-1 a {
     text-decoration: none;
-    color: beige;
+    color: black;
 }
 
 .item-2 a {
     text-decoration: none;
-    color: beige;
+    color: black;
 }
 
 .item-1:active {
@@ -70,15 +75,211 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: beige;
+    color: black;
     text-align: justify;
-    padding-top: 2vw;
+    margin-top: 16vw;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 .intro {
-    font-size: 3.2vw;
+    font-size: 2vw;
+    width: 45vw;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 100;
+}
+
+span {
+    display: inline-block;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+span:nth-child(1):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(2):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(3) {
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 1.25px black;
+  }
+
+  span:nth-child(3):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(4):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(5):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(6):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(7):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(8):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(9):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(10):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(11):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(12):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(13):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(14):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(15):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(16):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(17):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+  
+  span:nth-child(18):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(19):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(20):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(21):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(22):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(23):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(24):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(25):hover {
+    font-style: italic;
+    /* font-weight: 900; */
+    text-decoration: wavy underline;
+  }
+
+  span:nth-child(26):hover {
+    font-style: italic;
+    /* font-weight: 900;   */
+    text-decoration: wavy underline;
+}
+
+  span:nth-child(27):hover {
+    font-style: italic;
+    /* font-weight: 900;   */
+    text-decoration: wavy underline;
+}
+
+footer {
+    height: 5vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17vw;
+}
+ 
+.info-1 {
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
 }

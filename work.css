@@ -3,15 +3,20 @@ html {
     margin: 0;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 100;
-    color: beige;
-    background-color: black;
+    color: black;
+    background-color: white;
+}
+
+body {
+    margin: 0;
 }
 
 .menu-container{
+    font-family: aktiv-grotesk-extended, sans-serif;
     display: flex;
     justify-content: flex-end;
-    color: beige;
-    font-size: 0.75vw;
+    color: black;
+    font-size: 0.5vw;
     margin: 0;
     margin-left: 0;
     margin-right: 0;
@@ -23,9 +28,25 @@ footer {
     padding: 2vw;
 }
 
-/* .project-list {
-    text-transform: capitalize;
-} */
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  
+a:active {
+    text-decoration: underline;
+    color: black;
+  }
 
 .item-3 {
     padding-right: 40px;
@@ -33,7 +54,6 @@ footer {
 
 .item-3 a {
     text-decoration: none;
-    color: beige;
 }
 
 .item-1 {
@@ -42,12 +62,10 @@ footer {
 
 .item-1 a {
     text-decoration: none;
-    color: beige;
 }
 
 .item-2 a {
     text-decoration: none;
-    color: beige;
 }
 
 .item-1:active {
@@ -71,75 +89,136 @@ footer {
 }
 
 .project-list {
-    font-size: 4vw;
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+
+.project-1:hover {
+    /* border: 1px solid black; */
+    text-decoration: line-through;
 }
 
 .project-1 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-2:hover {
+    text-decoration: line-through;
 }
 
 .project-2 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-3:hover {
+    text-decoration: line-through;
 }
 
 .project-3 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-4:hover {
+    text-decoration: line-through;
 }
 
 .project-4 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-4:hover {
+    text-decoration: line-through;
 }
 
 .project-5 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-5:hover {
+    text-decoration: line-through;
 }
 
 .project-6 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-6:hover {
+    text-decoration: line-through;
 }
 
 .project-7 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-7:hover {
+    text-decoration: line-through;
 }
 
 .project-8 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-8:hover {
+    text-decoration: line-through;
 }
 
 .project-9 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-9:hover {
+    text-decoration: line-through;
 }
 
 .project-10 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-10:hover {
+    text-decoration: line-through;
 }
 
 .project-11 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-11:hover {
+    text-decoration: line-through;
 }
 
 .project-12 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-12:hover {
+    text-decoration: line-through;
 }
 
 .project-13 a {
     text-decoration: none;
-    color: beige;
+}
+
+.project-13:hover {
+    text-decoration: line-through;
 }
 
 hr {
-    border: 1px solid beige;
+    border: 1px solid black;
     width: 95vw;
+}
+
+footer {
+    height: 5vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+}
+ 
+.info-1 {
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
 }

@@ -1,17 +1,18 @@
 html {
     padding: 0;
     margin: 0;
-    font-family: aktiv-grotesk-thin, sans-serif;
+    font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 100;
-    background-color: black;
+    background-color: white;
 }
 
 .menu-container{
     display: flex;
+    font-family: aktiv-grotesk-extended, sans-serif;
     justify-content: flex-end;
-    color: beige;
+    color: black;
     font-weight: 100;
-    font-size: 0.75vw;
+    font-size: 0.5vw;
     margin: 0;
     margin-left: 0;
     margin-right: 0;
@@ -25,12 +26,12 @@ html {
 
 .item-1 a {
     text-decoration: none;
-    color: beige;
+    color: black;
 }
 
 .item-2 a {
     text-decoration: none;
-    color: beige;
+    color: black;
 }
 
 .item-1:active {
@@ -41,19 +42,22 @@ html {
 .item-1:hover {
     font-style: italic;
     color: rgb(111, 175, 235);
+    text-decoration: line-through;
 }
 
 .item-2:hover {
     font-style: italic;
     color: rgb(111, 175, 235);
+    text-decoration: line-through;
 }
 
 .title {
     position: relative;
-    font-family: aktiv-grotesk-thin, sans-serif;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
     font-size: 5vw;
     text-align: center;
-    color: beige;
+    /* color: beige; */
     /* background-blend-mode: exclusion; */
     font-weight: 100;
     font-style: normal;
@@ -68,6 +72,7 @@ html {
 .title:hover {
     font-style: italic;
     color: rgb(111, 175, 235);
+    cursor: pointer;
 }
 
 .picture-1 {
