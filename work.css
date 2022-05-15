@@ -56,16 +56,24 @@ a:active {
     text-decoration: none;
 }
 
+.item-3 a:hover {
+    text-decoration: line-through;
+}
+
 .item-1 {
     padding-right: 40px;
 }
 
-.item-1 a {
-    text-decoration: none;
+.item-1 a:hover {
+    text-decoration: line-through;
 }
 
-.item-2 a {
-    text-decoration: none;
+.item-3 a:hover {
+    text-decoration: line-through;
+}
+
+.item-2 a:hover {
+    text-decoration: line-through;
 }
 
 .item-1:active {
