@@ -320,30 +320,6 @@ span:nth-child(1):hover {
     background-color: white;
 }
 
-.class-1 {
-    font-weight: 100;
-}
-
-.class-1 a:link {
-    text-decoration: none;
-    color: black;
-  }
-  
-.class-1 a:visited {
-    text-decoration: none;
-    color: black;
-  }
-  
-.class-1 a:hover {
-    text-decoration: underline;
-    color: black;
-  }
-  
-.class-1 a:active {
-    text-decoration: underline;
-    color: black;
-  }
-
 footer {
     height: 5vw;
     background-color: black;

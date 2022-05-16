@@ -1,0 +1,30 @@
+html {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    cursor: pointer;
+}
+
+body {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 6rem 1rem;
+    background-color: white;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    /* line-height: 0.8; */
+    /* letter-spacing: -0.84em; */
+    margin-bottom: 2.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
