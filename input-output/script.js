@@ -10,15 +10,15 @@ let eURL = "images/jan-image-4.jpg";
 
 //feb
 
-let fURL = "images/feb-image-1.jpg"; 
+let fURL = "images/feb-image-7.jpg"; 
 
-let gURL = "images/feb-image-2.jpg"; 
+let gURL = "images/feb-image-8.jpg"; 
 
-let hURL = "images/feb-image-3.jpg"; 
+let hURL = "images/feb-image-9.jpg"; 
 
-let iURL = "images/feb-image-4.jpg"; 
+let iURL = "images/feb-image-10.jpg"; 
 
-let jURL = "images/feb-image-5.jpg"; 
+let jURL = "images/feb-image-11.jpg"; 
 
 let kURL = "images/march-image-1.jpg"; 
 
@@ -81,32 +81,12 @@ inputElement.addEventListener("keydown", function(event) {
                 selectedCardE.style.right = 600 * Math.random() + "px";
                 selectedCardE.style.top = 800 * Math.random() + "px";
 
-                result.appendChild(selectedCard);
-
-                result.appendChild(selectedCardB);
-
-                result.appendChild(selectedCardC);
-
-                result.appendChild(selectedCardD);
-
-                result.appendChild(selectedCardE);
-
-                if (["1"].includes(letter)){
-                    selectedCard.src = aURL;
-                    selectedCardB.src = bURL; 
-                    selectedCardC.src = cURL; 
-                    selectedCardD.src = dURL; 
-                    selectedCardE.src = eURL; 
-                }
-
-
-                //February
-
                 let selectedCardF = document.createElement("img");
-                selectedCardF.classList.add("feb-image_one");
-                selectedCardF.style.right = 400 * Math.random() + "px";
-                selectedCardF.style.left = 600 * Math.random() + "px";
-                selectedCardF.style.width = 700 * Math.random() + "px";
+                selectedCardF.classList.add("feb-image-one");
+                selectedCardF.style.left = 2000 * Math.random() + "px";
+                selectedCardF.style.width = 500 * Math.random() + "px";
+                selectedCardF.style.right = 600 * Math.random() + "px";
+                selectedCardF.style.top = 800 * Math.random() + "px";
 
                 let selectedCardG = document.createElement("img");
                 selectedCardG.classList.add("feb-image_two");
@@ -120,16 +100,25 @@ inputElement.addEventListener("keydown", function(event) {
                 selectedCardH.style.left = 600 * Math.random() + "px";
                 selectedCardH.style.width = 700 * Math.random() + "px";
 
+                result.appendChild(selectedCard);
+                result.appendChild(selectedCardB);
+                result.appendChild(selectedCardC);
+                result.appendChild(selectedCardD);
+                result.appendChild(selectedCardE);
+                result.appendChild(selectedCardF);
+                result.appendChild(selectedCardG);
+                result.appendChild(selectedCardH);
 
-                if (["2"].includes(letter)){
+                if (["1"].includes(letter)){
+                    selectedCard.src = aURL;
+                    selectedCardB.src = bURL; 
+                    selectedCardC.src = cURL; 
+                    selectedCardD.src = dURL; 
+                    selectedCardE.src = eURL; 
                     selectedCardF.src = fURL;
                     selectedCardG.src = gURL;
                     selectedCardG.src = hURL;
                 }
-
-                result.appendChild(selectedCardF);
-                result.appendChild(selectedCardG);
-                result.appendChild(selectedCardH);
 
 
 
