@@ -105,9 +105,9 @@ inputElement.addEventListener("keydown", function(event) {
                 result.appendChild(selectedCardC);
                 result.appendChild(selectedCardD);
                 result.appendChild(selectedCardE);
-                result.appendChild(selectedCardF);
-                result.appendChild(selectedCardG);
-                result.appendChild(selectedCardH);
+                // result.appendChild(selectedCardF);
+                // result.appendChild(selectedCardG);
+                // result.appendChild(selectedCardH);
 
                 if (["1"].includes(letter)){
                     selectedCard.src = aURL;
