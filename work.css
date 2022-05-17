@@ -231,6 +231,14 @@ a:active {
     text-decoration: line-through;
 }
 
+.project-14 a {
+    text-decoration: none;
+}
+
+.project-14:hover {
+    text-decoration: line-through;
+}
+
 hr {
     border: 1px solid black;
     width: 95vw;

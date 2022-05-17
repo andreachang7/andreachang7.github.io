@@ -1,0 +1,25 @@
+html {
+    background-color: white;
+    color: white;
+    margin: 0;
+}
+
+model-viewer {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.interaction-prompt {
+    font-size: 50px;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+}
