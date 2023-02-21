@@ -21,16 +21,9 @@ function setup() {
       var g = map(cos(frameCount / 2), -1, 1, 10, 255)
       var b = map(sin(frameCount / 4), -1, 1, 50, 255)
       
-    //   stroke(random(5, 255), random(5, 255), random(5, 255))
       stroke(r,g,b)
-
-    //   var a = (0, 0, 100 - i * 3, 100)
-    //   var c = (0, 0, 500 - i * 3, 50)
-    //   var d = (0, 0, 50 - i * 3, 500)
       
-    //   rect(a,c,d)
-      
-      rect(0, 0, 100 - i * 3, 100)
+      rect(0, 0, 100 - i * 3, 1000)
       
       pop()
     }
