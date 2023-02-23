@@ -40,6 +40,12 @@ function draw() {
     points[i].add(createVector(cos(angle), sin(angle)))
     ellipse(points[i].x, points[i].y, 1)
   }
+
+  // for (var f = 0; f < points2.length; f++) {
+  //   var angle = map(noise(points2[f].a * mult2, points2[f].c * mult2), 0, 1, 0, 720)
+  //   points2[f].add(createVector(cos(angle), sin(angle)))
+  //   ellipse(points2[f].a, points2[f].c, 1)
+  // }
 }
 
 

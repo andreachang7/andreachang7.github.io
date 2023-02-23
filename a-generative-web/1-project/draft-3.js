@@ -30,7 +30,7 @@ function setup() {
       
     //   rect(a,c,d)
       
-      rect(0, 0, 100 - i * 3, 100)
+      rect(0, 0, 100 - i * 3, 50)
       
       pop()
     }
