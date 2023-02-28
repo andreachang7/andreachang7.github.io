@@ -6,7 +6,6 @@ var mult2 = 0.001
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-//   background(random(5, 255), random(5, 255), random(5, 255))
   background('#white')
   angleMode(DEGREES)
   noiseDetail(2)
@@ -31,8 +30,7 @@ function setup() {
 
 function draw() {
 
-//   stroke(random(5, 255), random(5, 255), random(5, 255))
-  stroke('#44A58C')
+  stroke('blue')
   strokeWeight(0.1)
   
   

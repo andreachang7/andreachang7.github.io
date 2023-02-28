@@ -33,7 +33,7 @@ function draw() {
 
 //   stroke(random(5, 255), random(5, 255), random(5, 255))
   stroke('red')
-  strokeWeight(0.25)
+  strokeWeight(0.1)
   
   
   for (var i = 0; i < points.length; i++) {
