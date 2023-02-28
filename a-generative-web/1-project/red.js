@@ -32,7 +32,7 @@ function setup() {
 function draw() {
 
 //   stroke(random(5, 255), random(5, 255), random(5, 255))
-  stroke('#44A58C')
+  stroke('red')
   strokeWeight(0.25)
   
   
