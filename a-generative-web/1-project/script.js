@@ -14,19 +14,23 @@ function setup() {
   var density = 30
   var space = width / density
   
+// (push)
   for (var x = 0; x < width; x += space) {
     for (var y = 0; y < height; y += space) {
       var p = createVector(x + random(-10, 10),y + random(-10, 10))
       points.push(p)
     }
   }
+// (pop)
 
+// (push)
 //   for (var a = 0; a < width; a += space) {
 //     for (var c = 0; c < height; c += space) {
 //         var d = createVector(a + random(-20,20), c + random(-20, 20))
 //         points.push(d)
 //     }
 //   }
+// (pop)
 }
 
 function draw() {
