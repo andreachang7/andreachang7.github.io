@@ -1,37 +1,48 @@
-function setup() {
-    createCanvas(windowWidth, windowHeight);
-    
-    angleMode(DEGREES)
-    rectMode(CENTER)
-  }
-  
-  function draw() {
-    background(0);
-    noFill();
-    stroke(255)
-    
-    translate(width / 2, height / 2)
-    
-    for (var i = 0; i < 200; i++) {
-      push()
-      
-      rotate(sin(frameCount + i) * 200)
-      
-      var r = map(sin(frameCount), -1, 1, 100, 255)
-      var g = map(cos(frameCount / 2), -1, 1, 10, 255)
-      var b = map(sin(frameCount / 4), -1, 1, 50, 255)
-      
-    //   stroke(random(5, 255), random(5, 255), random(5, 255))
-      stroke(r,g,b)
+var points = []
+var mult = 0.001
 
-    //   var a = (0, 0, 100 - i * 3, 100)
-    //   var c = (0, 0, 500 - i * 3, 50)
-    //   var d = (0, 0, 50 - i * 3, 500)
-      
-    //   rect(a,c,d)
-      
-      rect(0, 0, 100 - i * 3, 50)
-      
-      pop()
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+  background('#ede0bd')
+  angleMode(DEGREES)
+  noiseDetail(1)
+  
+  var density = 500
+  var space = width / density
+  
+  for (var x = 0; x < width; x += space) {
+    for (var y = 0; y < height; y += space) {
+      var p = createVector(x + random(-10, 10),y + random(-10, 10))
+      points.push(p)
     }
   }
+}
+
+var time = 0
+function draw() {
+time+=1
+console.log(time)
+
+if(time < 250){
+  stroke('#4e5b41')
+  strokeWeight(0.5)
+}
+else if (time < 600){
+  strokeWeight(0.75)
+  stroke('#3f451f')
+}
+else if (time < 700){
+  strokeWeight(1)
+  stroke('black')
+}
+else if (time < 800){
+  strokeWeight(2)
+  stroke('black')
+}
+
+  for (var i = 0; i < points.length; i++) {
+    var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 8020)
+    points[i].add(createVector(tan(angle), sin(angle)))
+    ellipse(points[i].x, points[i].y, 1)
+  }
+}

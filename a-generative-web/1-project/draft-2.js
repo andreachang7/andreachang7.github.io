@@ -23,15 +23,6 @@ function draw() {
 time+=1
 console.log(time)
 
-// if(time < 250){
-//   stroke('#c8b46f')
-//   strokeWeight(0.2)
-// }
-// else{
-//   strokeWeight(0.75)
-//   stroke('#4e5b41')
-// }
-
 if(time < 250){
   stroke('#4e5b41')
   strokeWeight(0.5)
@@ -49,12 +40,9 @@ else if (time < 800){
   stroke('black')
 }
 
-  
   for (var i = 0; i < points.length; i++) {
     var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 720)
     points[i].add(createVector(cos(angle), sin(angle)))
     ellipse(points[i].x, points[i].y, 1)
   }
 }
-
-
