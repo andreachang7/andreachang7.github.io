@@ -6,7 +6,6 @@ var mult = 0.001
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-//   background(random(5, 255), random(5, 255), random(5, 255))
   background(3)
   angleMode(DEGREES)
   noiseDetail(1)
@@ -37,7 +36,7 @@ function draw() {
 
   stroke(random(5, 255), random(5, 255), random(5, 255))
 //   stroke('red')
-  strokeWeight(1)
+  strokeWeight(0.5)
   
   for (var i = 0; i < points.length; i++) {
     var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 720)
@@ -51,5 +50,3 @@ function draw() {
   //   ellipse(points2[f].a, points2[f].c, 1)
   // }
 }
-
-

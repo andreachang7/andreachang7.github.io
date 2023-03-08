@@ -1,17 +1,13 @@
 var points = []
 var mult = 0.001
 
-var points2 = []
-var mult2 = 0.001
-
 function setup() {
   createCanvas(windowWidth, windowHeight)
-//   background(random(5, 255), random(5, 255), random(5, 255))
-  background('#white')
+  background('#ede0bd')
   angleMode(DEGREES)
-  noiseDetail(2)
+  noiseDetail(1)
   
-  var density = 30
+  var density = 70
   var space = width / density
   
   for (var x = 0; x < width; x += space) {
@@ -20,35 +16,45 @@ function setup() {
       points.push(p)
     }
   }
-
-  for (var a = 0; a < width; a += space) {
-    for (var c = 0; c < height; c += space) {
-        var d = createVector(a + random(-20,20), c + random(-20, 20))
-        points.push(d)
-    }
-  }
 }
 
+var time = 0
 function draw() {
+time+=1
+console.log(time)
 
-//   stroke(random(5, 255), random(5, 255), random(5, 255))
-  stroke('#44A58C')
-  strokeWeight(0.1)
-  
+// if(time < 250){
+//   stroke('#c8b46f')
+//   strokeWeight(0.2)
+// }
+// else{
+//   strokeWeight(0.75)
+//   stroke('#4e5b41')
+// }
+
+if(time < 250){
+  stroke('#4e5b41')
+  strokeWeight(0.5)
+}
+else if (time < 600){
+  strokeWeight(0.75)
+  stroke('#3f451f')
+}
+else if (time < 700){
+  strokeWeight(1)
+  stroke('black')
+}
+else if (time < 800){
+  strokeWeight(2)
+  stroke('black')
+}
+
   
   for (var i = 0; i < points.length; i++) {
     var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 720)
     points[i].add(createVector(cos(angle), sin(angle)))
     ellipse(points[i].x, points[i].y, 1)
-    // i.strokeStyle('blue')
   }
-
-  for (var f = 0; f < points2.length; f++) {
-    var angle = map(noise(points2[f].a * mult2, points2[f].c * mult2), 0, 1, 0, 720)
-    points2[f].add(createVector(cos(angle), sin(angle)))
-    ellipse(points2[f].a, points2[f].c, 1)
-  }
-
 }
 
 
