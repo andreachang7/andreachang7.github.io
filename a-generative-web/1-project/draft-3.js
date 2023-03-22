@@ -46,3 +46,6 @@ else if (time < 800){
     ellipse(points[i].x, points[i].y, 1)
   }
 }
+
+
+
