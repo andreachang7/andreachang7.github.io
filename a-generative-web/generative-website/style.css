@@ -1,0 +1,36 @@
+html {
+    background-color: black;
+}
+
+.menu-container {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: flex;
+    font-size: 0.6vw;
+    justify-content: space-between;
+    padding: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.title {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 15vw;
+    margin-top: 4vh;
+    margin-bottom: 0;
+}
+
+.sub-heading {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+}

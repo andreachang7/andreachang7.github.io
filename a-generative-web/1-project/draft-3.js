@@ -1,5 +1,6 @@
 var points = []
 var mult = 0.001
+var randomForm 
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
@@ -16,6 +17,8 @@ function setup() {
       points.push(p)
     }
   }
+  randomForm = random(200,9000)
+  console.log(randomForm)
 }
 
 var time = 0
