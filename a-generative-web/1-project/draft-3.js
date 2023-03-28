@@ -26,21 +26,33 @@ function draw() {
 time+=1
 console.log(time)
 
-if(time < 250){
-  stroke('#4e5b41')
+// if(time < 150){
+//   stroke('#4e5b41')
+//   strokeWeight(0.5)
+// }
+// else if (time < 200){
+//   strokeWeight(0.75)
+//   stroke('#3f451f')
+// }
+// else if (time < 200){
+//   noLoop()
+// }
+
+// BLACK AND WHITE
+if(time < 100){
+  stroke('#646059')
   strokeWeight(0.5)
 }
-else if (time < 600){
+else if (time < 150){
   strokeWeight(0.75)
-  stroke('#3f451f')
+  stroke('#55514B')
 }
-else if (time < 700){
-  strokeWeight(1)
+else if (time < 200){
+  strokeWeight(0.75)
   stroke('black')
 }
-else if (time < 800){
-  strokeWeight(2)
-  stroke('black')
+else if (time < 200){
+  noLoop()
 }
 
   for (var i = 0; i < points.length; i++) {
