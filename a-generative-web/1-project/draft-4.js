@@ -1,5 +1,6 @@
 var points = []
 var mult = 0.001
+var randomForm 
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
@@ -16,6 +17,8 @@ function setup() {
       points.push(p)
     }
   }
+  randomForm = random(8000,20000)
+  console.log(randomForm)
 }
 
 var time = 0
@@ -23,33 +26,33 @@ function draw() {
 time+=1
 console.log(time)
 
-// BLACK AND WHITE
-if(time < 100){
+if(time < 250){
   stroke('black')
-  strokeWeight(0.005)
+  strokeWeight(0.5)
 }
-if(time < 150){
-  stroke('#57544E')
-  strokeWeight(0.0005)
-}
-if(time < 200){
-  stroke('#7B7871')
-  strokeWeight(0.0005)
-}
-else if (time < 250){
-  strokeWeight(0.0005)
-  stroke('#66635D')
-}
-else if (time < 300){
-  strokeWeight(0.0005)
-  stroke('#C4BEB3')
-}
+
+// if (time < 250){
+//   stroke('#FDFAF3')
+//   strokeWeight(0.0015)
+// }
+// else if (time < 200){
+//   strokeWeight(0.75)
+//   stroke('#484540')
+// }
+// else if (time < 250){
+//   strokeWeight(0.05)
+//   stroke('#57544E')
+// }
+// else if (time < 275){
+//   strokeWeight(0.05)
+//   stroke('#66635D')
+// }
 else if (time < 350){
   noLoop()
 }
 
   for (var i = 0; i < points.length; i++) {
-    var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 8020)
+    var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, randomForm)
     points[i].add(createVector(tan(angle), sin(angle)))
     ellipse(points[i].x, points[i].y, 1)
   }
