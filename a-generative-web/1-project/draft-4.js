@@ -1,5 +1,5 @@
 var points = []
-var mult = 0.001
+var mult
 var randomForm 
 var zoom
 
@@ -22,6 +22,8 @@ function setup() {
   console.log(randomForm)
 
   zoom = random(1,5)
+
+  mult = random(0.001, 0.0025)
 }
 
 var time = 0
