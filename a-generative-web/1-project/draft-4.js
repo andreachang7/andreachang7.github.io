@@ -38,24 +38,6 @@ if(time < 250){
 else if (time < 350){
   noLoop()
 }
-
-// if (time < 250){
-//   stroke('#FDFAF3')
-//   strokeWeight(0.0015)
-// }
-// else if (time < 200){
-//   strokeWeight(0.75)
-//   stroke('#484540')
-// }
-// else if (time < 250){
-//   strokeWeight(0.05)
-//   stroke('#57544E')
-// }
-// else if (time < 275){
-//   strokeWeight(0.05)
-//   stroke('#66635D')
-// }
-
   for (var i = 0; i < points.length; i++) {
     var angle = map(noise(points[i].x * mult, points[i].y * mult), 0, zoom, 0, randomForm)
     points[i].add(createVector(tan(angle), sin(angle)))
