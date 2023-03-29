@@ -18,7 +18,7 @@ function setup() {
       points.push(p)
     }
   }
-  randomForm = random(8000,20000)
+  randomForm = random(8000,15000)
   console.log(randomForm)
 
   zoom = random(1,5)
