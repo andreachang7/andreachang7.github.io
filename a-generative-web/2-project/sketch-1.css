@@ -39,6 +39,7 @@ body {
   border-radius: 50%; 
   background: gold; 
   cursor: pointer; 
+  
 }
   
 .slider::-moz-range-thumb {
