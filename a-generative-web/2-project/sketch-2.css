@@ -1,0 +1,66 @@
+html {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: beige;
+    background-color: black;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+.sliders {
+    padding-right: 3vw;
+}
+
+.text-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textInput {
+    width: 15vw;
+    height: 2vh;
+    border-radius: 20px;
+    border: 2px dotted black;
+    margin-left: 1vw;
+    padding: 0.25vw;
+}
+
+#textToStylize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .output-container {
+    background-color: white;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} */

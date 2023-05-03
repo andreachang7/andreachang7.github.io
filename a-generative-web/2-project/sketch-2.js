@@ -1,26 +1,22 @@
-function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
+const fontSizeSlider = document.getElementById("fontSize");
+const letterSpacingSlider = document.getElementById("letterSpacing");
+const lineHeightSlider = document.getElementById("lineHeight");
+const textInput = document.getElementById("textInput");
+const textToStylize = document.getElementById("textToStylize");
 
-  canvas.class("container");
 
-  horizonSlider = createSlider(60, 350, 150, 2);
-  horizonSlider.position(10, 10);
-}
-function draw() {
-  horizon = horizonSlider.value();
+fontSizeSlider.addEventListener("input", () => {
+  textToStylize.style.fontSize = fontSizeSlider.value + "px";
+});
 
-  c1 = color("darkblue");
-  c2 = color("orange");
-  c3 = color("brown");
+letterSpacingSlider.addEventListener("input", () => {
+  textToStylize.style.letterSpacing = letterSpacingSlider.value + "px";
+});
 
-  for(y = horizon; y < height; y++) {
-    yMap = map(y, 0, height, 0, 1);
-    newColor = lerpColor(c1, c2, yMap);
-    stroke(newColor);
-    line(0, y, width, y);
-  }
-  stroke(0);
-  textSize(20);
-  text("Horizon Height: " + horizon, 10, 50);
-}
+lineHeightSlider.addEventListener("input", () => {
+  textToStylize.style.lineHeight = lineHeightSlider.value;
+});
+
+textInput.addEventListener("input", () => {
+  textToStylize.textContent = textInput.value;
+});
