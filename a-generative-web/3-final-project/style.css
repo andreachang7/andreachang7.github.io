@@ -8,10 +8,28 @@ html, body {
 
 canvas {
   display: block;
+  /* filter: drop-shadow(0 0 0.75rem black); */
+  /* border: black; */
 }
+
+.label-container {
+  font-size: 6px;
+  font-weight: 400;
+}
+
+.text-spacing {
+  padding-top: 8vh;
+  padding-left: 1vw;
+}
+
+.text-size {
+  padding-top: 4vh;
+  padding-left: 1vw;
+}
+
 .slider {
   -webkit-appearance: none;
-  width: 15%;
+  width: 12%;
   height: 10px;
   border-radius: 5px;  
   background: #d3d3d3;
@@ -25,20 +43,21 @@ canvas {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%; 
   background: black;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: black;
   cursor: pointer;
 }
+
 
 /* 
 .slider-container {

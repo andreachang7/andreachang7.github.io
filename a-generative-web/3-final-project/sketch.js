@@ -17,7 +17,6 @@ dimDif = resolution / resolutionH,
 sizeH = h,
 sizeW = h * dimDif;
 
-
 function preload() {
   eiko = loadFont('eiko.otf');
 }
@@ -27,51 +26,41 @@ function setup() {
   textFont(eiko);
   strokeWeight(2);
   fill(255);
-  textSize(150);
-  textWidth(100);
+  // textWidth(100);
   
   colorPicker = createColorPicker('black');
-  colorPicker.position(0, 5);
+  colorPicker.position(15, 15);
   colorPicker.class('colorPicker');
   
   strokePicker = createColorPicker('black');
-  strokePicker.position(100, 5);
+  strokePicker.position(100, 15);
   strokePicker.addClass('strokePicker')
   
   backgroundPicker = createColorPicker('white');
-  backgroundPicker.position(200, 5);
+  backgroundPicker.position(200, 15);
   backgroundPicker.addClass('backgroundPicker');
   
   textSpaceSlider = createSlider(50, 300, 150);
-  textSpaceSlider.position(0, 50)
+  textSpaceSlider.position(0, 100)
   textSpaceSlider.addClass('slider');
 
   fontSizeSlider = createSlider(50, 300, 150);
-  fontSizeSlider.position(0, 100);
+  fontSizeSlider.position(0, 160);
   fontSizeSlider.addClass('slider');
-  
-  // fontSizeSlider = createSlider(50, 300, 150)
-  // textSizeSlider.oninput = changeFontSize; 
-  
-}
 
-function backgroundColor() {
-  background(backgroundPicker.color());
-}
-
-function changeFontSize() {
-  // text.style.textSize = this.value + "px";
+  let val = backgroundPicker.value();
+  background(val);
 }
 
 function draw() {
+// background(255,255,255)
    stroke(strokePicker.color());
    fill(colorPicker.color());
-   text(contents, 25, 150, window.innerWidth, window.innerHeight);
+   text(contents, 25, 150, sizeW, sizeH);
    noFill();
-  
+
+   textSize(fontSizeSlider.value());
    textLeading(textSpaceSlider.value());
-  //  fontSize(fontSizeSlider.value());
-  
   
   var p1 = random(50, 200);
   var p2 = random(50, 500);
@@ -111,7 +100,6 @@ function draw() {
   }
   
   if ((keyIsPressed == true) && (key == 'b')) {
-    // curve(700, 800, 800, 703, 61, 400, 300, 50, 900, 1500, 50, 1000);
     curve(p16, p20, p20, p7, a4, a3, a1, a2, p14, p17, a4,p14);
   }
   if ((keyIsPressed == true) && (key == 'B')) {
@@ -290,27 +278,19 @@ function draw() {
     curve(1500, 50, 5000, -1500, 200, 500, 50, 3000) 
   }
 
-  if ((keyIsPressed == true) && (key == 'Delete')) {
-    contents.slice(0, -1);
+  if ((keyIsPressed == true) && (key == 'Enter')) {
+
+  }
+
+  if ((keyIsPressed == true) && (key == 'Backspace')) {
+     console.log(contents)
+    //contents.slice(0, -1);
   }
 }
-
 
 function keyTyped() {
   contents += key;
 }
 
-
 //if delete pressed
 // contents.slice(0, -1)
-
-// function mousePressed() {
-//   if (on) {
-//     on = false;
-//   } else {
-//     on = true;
-//   }
-// }
-
-
-
