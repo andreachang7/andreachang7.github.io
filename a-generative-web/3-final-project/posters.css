@@ -1,0 +1,178 @@
+html {
+    background-color: black;
+    cursor: pointer;
+}
+
+.menu-container {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: flex;
+    font-size: 0.6vw;
+    justify-content: space-between;
+    padding: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.title {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 12vw;
+    margin-top: 4vh;
+    margin-bottom: 0;
+}
+
+.title:hover {
+    color: #7A060C;
+}
+
+.sub-heading {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.sub-heading:hover {
+    color: #7A060C;
+}
+
+.junji-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.junji-1 {
+    width: 10vw;
+    margin: 1vw;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-1 {
+    width: 30vw;
+    margin: 1vw;
+}
+
+.grid-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-2 {
+    width: 18vw;
+    margin: 0.5vw;
+}
+
+.grid-container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-3 {
+    width: 18vw;
+    margin: 0.5vw;
+}
+
+.main-img-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-img-1 {
+    width: 90vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.second-img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-img-2 {
+    width: 90vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.third-img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-img-3 {
+    width: 90vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.fourth-img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-img-4 {
+    width: 90vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.code-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.code {
+    width: 50vw;
+}
+
+.arrow {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.arrow:hover {
+    color: #7A060C;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+
+.credits-container {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    font-size: 0.5vw;
+    text-align: center;
+}

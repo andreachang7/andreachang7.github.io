@@ -32,23 +32,23 @@ function setup() {
   background(255);
   
   colorPicker = createColorPicker('white');
-  colorPicker.position(15, 15);
+  colorPicker.position(315, 405);
   colorPicker.class('colorPicker');
   
   strokePicker = createColorPicker('black');
-  strokePicker.position(100, 15);
+  strokePicker.position(315, 455);
   strokePicker.addClass('strokePicker')
   
   // backgroundPicker = createColorPicker('white');
   // backgroundPicker.position(200, 15);
   // backgroundPicker.addClass('backgroundPicker');
   
-  textSpaceSlider = createSlider(50, 300, 150);
-  textSpaceSlider.position(0, 100)
+  textSpaceSlider = createSlider(50, 500, 150);
+  textSpaceSlider.position(95, 605)
   textSpaceSlider.addClass('slider');
 
-  fontSizeSlider = createSlider(50, 300, 150);
-  fontSizeSlider.position(0, 160);
+  fontSizeSlider = createSlider(50, 500, 150);
+  fontSizeSlider.position(95, 535);
   fontSizeSlider.addClass('slider');
 
   // let val = backgroundPicker.value();

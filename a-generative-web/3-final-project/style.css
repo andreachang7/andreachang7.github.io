@@ -13,30 +13,82 @@ canvas {
 }
 
 /* .artboard {
-  width: 500px;
+  width: 679px;
   height: 900px;
-  background-color: black;
+  background-color: red;
+  margin-left: 30.30vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
 } */
 
 .label-container {
+  width: 17vw;
+  height: 45vh;
+  margin-left: 5vw;
+  margin-top: 25vh;
   font-size: 6px;
   font-weight: 400;
+  border: solid 1px white;
+}
+
+.title {
+  padding-top: 0;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-family: 'Eiko';
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+}
+
+.line {
+  border: none;
+  background: white;
+  height: 10px;
+  width: 15vw;
+}
+
+.line-2 {
+  width: 15vw;
+}
+
+.line-3 {
+  width: 15vw;
+}
+
+.line-4 {
+  width: 15vw;
+}
+
+.line-5 {
+  width: 15vw;
+}
+
+.color-picker {
+  margin-left: 1vw;
+  margin-top: 2.5vh;
+}
+
+.stroke-picker {
+  margin-left: 1vw;
+  margin-top: 2.5vh;
 }
 
 .text-spacing {
-  padding-top: 8vh;
-  padding-left: 1vw;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  margin-bottom: 3.5vh;
 }
 
 .text-size {
-  padding-top: 4vh;
-  padding-left: 1vw;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  margin-bottom: 3.5vh;
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 12%;
-  height: 10px;
+  width: 15%;
+  height: 5px;
   border-radius: 5px;  
   background: white;
   outline: none;
@@ -52,7 +104,7 @@ canvas {
   width: 15px;
   height: 15px;
   border-radius: 50%; 
-  background: whitesmoke;
+  background: yellowgreen;
   cursor: pointer;
 }
 
@@ -60,9 +112,18 @@ canvas {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: whitesmoke;
+  background: yellowgreen;
   cursor: pointer;
 }
+
+.footer-container {
+  padding-top: 35vh;
+  margin-bottom: 5vh;
+  font-family: 'Eiko';
+  font-size: 0.5vw;
+  text-align: center;
+}
+
 
 
 /* 
