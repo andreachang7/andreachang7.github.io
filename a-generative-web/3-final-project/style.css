@@ -4,13 +4,19 @@ html, body {
   border: 0;
   font-family: 'Aktiv Grotesk';
   font-weight: 700;
+  color: white;
+  background-color: #121212;
 }
 
 canvas {
   display: block;
-  /* filter: drop-shadow(0 0 0.75rem black); */
-  /* border: black; */
 }
+
+/* .artboard {
+  width: 500px;
+  height: 900px;
+  background-color: black;
+} */
 
 .label-container {
   font-size: 6px;
@@ -32,7 +38,7 @@ canvas {
   width: 12%;
   height: 10px;
   border-radius: 5px;  
-  background: #d3d3d3;
+  background: white;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -46,7 +52,7 @@ canvas {
   width: 15px;
   height: 15px;
   border-radius: 50%; 
-  background: black;
+  background: whitesmoke;
   cursor: pointer;
 }
 
@@ -54,7 +60,7 @@ canvas {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: black;
+  background: whitesmoke;
   cursor: pointer;
 }
 

@@ -1,5 +1,6 @@
+let canvas1;
 let colorPicker;
-let backgroundPicker;
+// let backgroundPicker;
 let strokePicker;
 
 let textSpaceSlider;
@@ -7,7 +8,8 @@ let fontSizeSlider;
 
 let on = false;
 let eiko;
-let contents = "";
+// let contents = "Hello World";
+let contents = " ";
 
 var w = window.innerWidth,
 h = window.innerHeight,
@@ -22,13 +24,14 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(sizeW, sizeH);
+
+  canvas1 = createCanvas(sizeW, sizeH);
   textFont(eiko);
   strokeWeight(2);
   fill(255);
-  // textWidth(100);
+  background(255);
   
-  colorPicker = createColorPicker('black');
+  colorPicker = createColorPicker('white');
   colorPicker.position(15, 15);
   colorPicker.class('colorPicker');
   
@@ -36,9 +39,9 @@ function setup() {
   strokePicker.position(100, 15);
   strokePicker.addClass('strokePicker')
   
-  backgroundPicker = createColorPicker('white');
-  backgroundPicker.position(200, 15);
-  backgroundPicker.addClass('backgroundPicker');
+  // backgroundPicker = createColorPicker('white');
+  // backgroundPicker.position(200, 15);
+  // backgroundPicker.addClass('backgroundPicker');
   
   textSpaceSlider = createSlider(50, 300, 150);
   textSpaceSlider.position(0, 100)
@@ -48,19 +51,21 @@ function setup() {
   fontSizeSlider.position(0, 160);
   fontSizeSlider.addClass('slider');
 
-  let val = backgroundPicker.value();
-  background(val);
+  // let val = backgroundPicker.value();
+  // background(val);
 }
 
 function draw() {
-// background(255,255,255)
+
    stroke(strokePicker.color());
    fill(colorPicker.color());
-   text(contents, 25, 150, sizeW, sizeH);
+   text(contents, 10, 120, sizeW, sizeH);
    noFill();
 
    textSize(fontSizeSlider.value());
    textLeading(textSpaceSlider.value());
+
+  //  text(contents, 25, 150, sizeW, sizeH);
   
   var p1 = random(50, 200);
   var p2 = random(50, 500);
@@ -278,8 +283,8 @@ function draw() {
     curve(1500, 50, 5000, -1500, 200, 500, 50, 3000) 
   }
 
-  if ((keyIsPressed == true) && (key == 'Enter')) {
-
+  if ((keyIsPressed == true) && (key == 'Return')) {
+    photo.save('canvas1', 'jpg')
   }
 
   if ((keyIsPressed == true) && (key == 'Backspace')) {
@@ -287,6 +292,20 @@ function draw() {
     //contents.slice(0, -1);
   }
 }
+
+// function keyPressed() {
+//   if (keyCode === BACKSPACE || keyCode === DELETE) {
+//     return false;
+//   }
+// }
+
+// function keyTyped() {
+//   if (keyCode === BACKSPACE || keyCode === DELETE) {
+//     contents = contents.slice(0, -1);
+//   } else {
+//     contents += key;
+//   }
+// }
 
 function keyTyped() {
   contents += key;
