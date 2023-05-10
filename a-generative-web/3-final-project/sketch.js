@@ -32,11 +32,11 @@ function setup() {
   background(255);
   
   colorPicker = createColorPicker('white');
-  colorPicker.position(315, 405);
+  colorPicker.position(330, 410);
   colorPicker.class('colorPicker');
   
   strokePicker = createColorPicker('black');
-  strokePicker.position(315, 455);
+  strokePicker.position(330, 460);
   strokePicker.addClass('strokePicker')
   
   // backgroundPicker = createColorPicker('white');
@@ -44,11 +44,11 @@ function setup() {
   // backgroundPicker.addClass('backgroundPicker');
   
   textSpaceSlider = createSlider(50, 500, 150);
-  textSpaceSlider.position(95, 605)
+  textSpaceSlider.position(95, 615)
   textSpaceSlider.addClass('slider');
 
   fontSizeSlider = createSlider(50, 500, 150);
-  fontSizeSlider.position(95, 535);
+  fontSizeSlider.position(95, 545);
   fontSizeSlider.addClass('slider');
 
   // let val = backgroundPicker.value();
@@ -310,6 +310,3 @@ function draw() {
 function keyTyped() {
   contents += key;
 }
-
-//if delete pressed
-// contents.slice(0, -1)

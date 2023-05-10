@@ -22,10 +22,10 @@ canvas {
 } */
 
 .label-container {
-  width: 17vw;
-  height: 45vh;
+  width: 18vw;
+  height: 52vh;
   margin-left: 5vw;
-  margin-top: 25vh;
+  margin-top: 20vh;
   font-size: 6px;
   font-weight: 400;
   border: solid 1px white;
@@ -40,27 +40,35 @@ canvas {
   margin-bottom: 1vh;
 }
 
+.description {
+  font-size: 0.65vw;
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+  /* color: yellowgreen; */
+}
+
 .line {
   border: none;
   background: white;
   height: 10px;
-  width: 15vw;
+  width: 16vw;
 }
 
 .line-2 {
-  width: 15vw;
+  width: 16vw;
 }
 
 .line-3 {
-  width: 15vw;
+  width: 16vw;
 }
 
 .line-4 {
-  width: 15vw;
+  width: 16vw;
 }
 
 .line-5 {
-  width: 15vw;
+  width: 16vw;
+  margin-bottom: 2vh;
 }
 
 .color-picker {
@@ -87,7 +95,7 @@ canvas {
 
 .slider {
   -webkit-appearance: none;
-  width: 15%;
+  width: 16%;
   height: 5px;
   border-radius: 5px;  
   background: white;
@@ -124,7 +132,15 @@ canvas {
   text-align: center;
 }
 
-
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.75vw;
+  font-family: 'Eiko';
+  margin-left: 6.5vw;
+  border: 1px solid white;
+  padding: 0.25vw;
+}
 
 /* 
 .slider-container {
