@@ -1,6 +1,5 @@
 let canvas1;
 let colorPicker;
-// let backgroundPicker;
 let strokePicker;
 
 let textSpaceSlider;
@@ -33,15 +32,11 @@ function setup() {
   
   colorPicker = createColorPicker('white');
   colorPicker.position(330, 410);
-  colorPicker.class('colorPicker');
+  colorPicker.addClass('colorPicker');
   
   strokePicker = createColorPicker('black');
   strokePicker.position(330, 460);
   strokePicker.addClass('strokePicker')
-  
-  // backgroundPicker = createColorPicker('white');
-  // backgroundPicker.position(200, 15);
-  // backgroundPicker.addClass('backgroundPicker');
   
   textSpaceSlider = createSlider(50, 500, 150);
   textSpaceSlider.position(95, 615)
@@ -50,9 +45,6 @@ function setup() {
   fontSizeSlider = createSlider(50, 500, 150);
   fontSizeSlider.position(95, 545);
   fontSizeSlider.addClass('slider');
-
-  // let val = backgroundPicker.value();
-  // background(val);
 }
 
 function draw() {
@@ -64,8 +56,6 @@ function draw() {
 
    textSize(fontSizeSlider.value());
    textLeading(textSpaceSlider.value());
-
-  //  text(contents, 25, 150, sizeW, sizeH);
   
   var p1 = random(50, 200);
   var p2 = random(50, 500);
