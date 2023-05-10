@@ -12,15 +12,6 @@ canvas {
   display: block;
 }
 
-/* .artboard {
-  width: 679px;
-  height: 900px;
-  background-color: red;
-  margin-left: 30.30vw;
-  margin-bottom: 0;
-  padding-bottom: 0;
-} */
-
 .label-container {
   width: 18vw;
   height: 52vh;
@@ -141,29 +132,3 @@ a {
   border: 1px solid white;
   padding: 0.25vw;
 }
-
-/* 
-.slider-container {
-  margin-top: 50px;
-  background: black;
-  padding: 3vw;
-} */
-
-/* .textsize-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-#textSizeSlider {
-  padding-top: 0;
-}
-
-label {
-  color: white;
-} */
